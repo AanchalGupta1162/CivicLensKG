@@ -7,8 +7,8 @@ Everything the other modules need to know what a complaint is connected to.
 CivicLensKG/
 ├── complaints.csv          # shared dataset: 80 complaints (the agreed schema)
 ├── knowledge_graph.py      # the module: build graph, query relationships, explain
-├── prepare_images.py       # links Kaggle pothole photos to complaints (see below)
-├── images/                 # 61 photos (C101-C121, C141-C180) appear here after prepare_images.py
+├── prepare_images.py       # links pothole / garbage / streetlight photos to complaints (see below)
+├── images/                 # one photo per complaint (80) + image_manifest.csv + SOURCES.md
 ├── demo/                   # c101_graph.png, c101_related_graph.png, graph.json
 ├── tests/test_knowledge_graph.py
 └── requirements.txt
@@ -34,7 +34,7 @@ road_name, road_importance, department, status, image_path, created_date`
 | `status` | Unresolved, In Progress, Resolved |
 | `road_importance` | Major, Minor (one value per road name) |
 | `area` | Andheri, Jogeshwari, Vile Parle, Santacruz, Bandra, Kurla, Powai, Goregaon, Malad |
-| `image_path` | `images/<ID>.jpg`. Filled for all 61 pothole / damaged-road complaints (C101-C121, C141-C180). **Blank for garbage and streetlight complaints; Member 4 adds those photos and fills the column.** |
+| `image_path` | `images/<ID>.jpg`. Filled for all 80 complaints. **Every complaint has one (C101-C180).** |
 
 Built-in cases for demos: C101 / C102 are near-duplicates (same road, ~30 m apart), C113 / C114
 likewise; C122 / C131 are duplicate garbage reports; C104 is a pothole on a *minor* road near
@@ -50,7 +50,7 @@ C101, so C101 should outrank it; several complaints are Resolved or In Progress.
 | `Complaint -[HAS_EVIDENCE]-> EvidenceImage` | photo (has `path`, `exists`) |
 | `Road -[PASSES_THROUGH]-> Location` | derived: roads serve every area they have complaints in |
 
-Sample graph: 169 nodes (80 Complaint, 9 Location, 16 Road, 3 Department, 61 EvidenceImage), 325 edges.
+Sample graph: 188 nodes (80 Complaint, 9 Location, 16 Road, 3 Department, 80 EvidenceImage), 344 edges.
 
 ## API cheat sheet
 
@@ -79,8 +79,8 @@ Who uses what:
 - **Member 2:** `get_road_importance` for ranking, `graph_explanation` / `reasoning_paths` for the
   "why retrieved" text, `related_complaints` as extra evidence for duplicate detection.
 - **Member 3:** `Location` nodes carry centroid `latitude` / `longitude`; `roads_in_location`.
-- **Member 4:** `get_evidence(G, id)` gives the photo path and whether the file exists; to add
-  garbage/streetlight photos, drop `images/Cxxx.jpg` and fill `image_path`.
+- **Member 4:** `get_evidence(G, id)` gives the photo path and whether the file exists; garbage and
+  streetlight photos are added with `prepare_images.py` (see "Photos" below).
 - **Member 5:** each complaint's `department` is its index; call `load_graph` once and pass `G`
   around (e.g. `@st.cache_resource` in Streamlit).
 
@@ -120,28 +120,36 @@ for d in dupes:
 ```
 
 
-## Pothole photos (Kaggle)
+## Photos (potholes, garbage, streetlights)
 
-The 61 photos are **already in `images/`**; teammates do not need to download anything. The steps
-below are only for regenerating them.
+**All 80 complaints have a photo in `images/`** (`images/<complaint id>.jpg`, max 800 px, about 5.6 MB
+in total), so teammates do not need to download anything. Photo sources, with per-photo credits in
+`images/SOURCES.md`:
 
-Source: https://www.kaggle.com/datasets/andrewmvd/pothole-detection (665 images, 351 MB,
-Database Contents License v1.0; credit "Potholes Dataset", Make ML). Kaggle needs a login, so
-download it yourself:
+| Category (`issue_type`) | Complaints | Source | Licence |
+|---|---|---|---|
+| pothole (Pothole, Damaged Road) | 61 | Kaggle [andrewmvd/pothole-detection](https://www.kaggle.com/datasets/andrewmvd/pothole-detection) (Make ML's Potholes Dataset) | DbCL v1.0 |
+| garbage (Garbage) | 10 | 10 street-garbage photos from Wikimedia Commons | CC BY / CC BY-SA / public domain, credited per photo |
+| streetlight (Streetlight) | 9 | 9 street-lamp photos from Wikimedia Commons | CC BY / CC BY-SA, credited per photo |
+
+The photos illustrate each problem in general; they do not show the places named in the CSV, and the
+streetlight photos show lamps that work, not broken ones. `images/image_manifest.csv` maps each
+complaint to the original file.
+
+### Regenerating or replacing photos
+
+`prepare_images.py` links photos in a folder to the complaints of one category (any combination of
+flags; categories you leave out are not touched):
 
 ```bash
-pip install kaggle      # needs an API token in ~/.kaggle/kaggle.json
-kaggle datasets download -d andrewmvd/pothole-detection -p ~/Downloads/pothole --unzip
-```
-(or use "Download" on the Kaggle page and unzip it.) Then:
-
-```bash
-python prepare_images.py --src ~/Downloads/pothole
+python prepare_images.py --pothole-src ~/Downloads/pothole \
+                         --garbage-src ~/Downloads/garbage \
+                         --streetlight-src ~/Downloads/streetlights \
+                         --streetlight-credit "where these photos came from, with licence"
 ```
 
-This copies 61 photos (picked evenly and deterministically, resized to 800 px) to
-`images/<complaint id>.jpg` and writes `images/image_manifest.csv` and `images/SOURCES.md`
-with the attribution. Everyone running it gets identical files. Do not commit the raw
-351 MB download.
-
-The photos illustrate potholes in general; they do not show the places named in the CSV.
+For each complaint of a category it sets a blank `image_path` to `images/<id>.jpg` (rewriting
+`complaints.csv`), copies one photo there resized to 800 px, and updates `image_manifest.csv` and
+`SOURCES.md` (one attribution section per category). Photos are picked evenly and deterministically.
+Each folder needs at least as many photos as there are complaints of that category. Do not commit
+raw downloads, and always pass the credit text for photos that need attribution.

@@ -35,8 +35,7 @@ Do not edit another member's file unless asked. Import from it instead.
 - `status`: Unresolved | In Progress | Resolved
 - `road_importance`: Major | Minor. One value per `road_name` (a road is one graph node).
 - `created_date`: YYYY-MM-DD
-- `image_path`: `images/<complaint_id>.jpg` or blank. Filled for the 61 Pothole/Damaged Road rows
-  (C101-C121, C141-C180). Garbage/Streetlight rows (C122-C140) are blank until Member 4 adds photos.
+- `image_path`: `images/<complaint_id>.jpg` or blank. Filled for all 80 complaints (see Images).
 - Areas: Andheri, Jogeshwari, Vile Parle, Santacruz, Bandra, Kurla, Powai, Goregaon, Malad.
 
 Do not rename/reorder columns or change types. Adding rows is fine: keep IDs unique, run the tests.
@@ -50,7 +49,7 @@ with `node_id(kind, key)`, never by hand. Node types: Complaint, Location, Road,
 Edges carry `relation`:
 `Complaint-LOCATED_AT->Location`, `Complaint-AFFECTS_ROAD->Road`, `Complaint-ASSIGNED_TO->Department`,
 `Complaint-HAS_EVIDENCE->EvidenceImage`, `Road-PASSES_THROUGH->Location` (derived).
-Sample graph: 169 nodes, 325 edges. Location nodes hold centroid lat/lon; Road nodes hold `importance`.
+Sample graph: 188 nodes, 344 edges. Location nodes hold centroid lat/lon; Road nodes hold `importance`.
 
 Public API (use these; see the module docstrings for details):
 ```python
@@ -125,13 +124,17 @@ eval_res = evaluate_retrieval(retriever, top_k=5)  # P@5=0.400, R@5=0.938, MRR@5
   Image search: show top 3 matches and manually check relevance.
 
 ## Images
-`images/` holds 61 Kaggle pothole photos (JPEG, max 800 px), one per Pothole/Damaged Road complaint, plus
-`image_manifest.csv` (complaint -> original file) and `SOURCES.md` (attribution). Source: Pothole
-Detection by Larxel (andrewmvd) on Kaggle, built on Make ML's Potholes Dataset, Database Contents
-License v1.0. Photos are generic pothole pictures, not the places named in the CSV. Keep the attribution.
-`prepare_images.py --src <unzipped kaggle folder>` regenerates them deterministically; the raw 351 MB
-download is not in the repo and must not be committed. If you do image search with a fallback instead of
-real CLIP embeddings, label it honestly rather than calling it visual-semantic search.
+`images/` holds one JPEG (max 800 px, 5.6 MB total) for **every** complaint (80), plus `image_manifest.csv`
+(complaint -> original file) and `SOURCES.md` (attribution; per-photo credits for the Wikimedia ones).
+- 61 pothole / damaged-road photos: Kaggle Pothole Detection by Larxel (andrewmvd), built on Make ML's
+  Potholes Dataset, DbCL v1.0.
+- 10 garbage photos (C122-C131) and 9 streetlight photos (C132-C140): Wikimedia Commons, CC BY / CC BY-SA /
+  public domain; keep the credits in `SOURCES.md` if you copy them.
+Photos are generic, not the places named in the CSV, and the streetlight photos show working lamps.
+`prepare_images.py --pothole-src A --garbage-src B --streetlight-src C [--garbage-credit "..."]` regenerates or
+replaces them (any subset; categories are matched by `issue_type`, `complaints.csv` is rewritten,
+results are deterministic). Raw downloads must not be committed. If you do image search with a
+fallback instead of real CLIP embeddings, label it honestly rather than calling it visual-semantic search.
 
 ## Commands
 ```bash
