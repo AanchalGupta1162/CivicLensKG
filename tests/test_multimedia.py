@@ -149,6 +149,42 @@ def test_backend_selection():
             multimedia._resolve_backend("clip")
 
 
+@pytest.mark.parametrize("fail_at", [1, 3])
+def test_auto_rebuilds_whole_index_after_clip_failure(dataset, monkeypatch, fail_at):
+    """A failed model download/inference must leave a usable, uniform fallback index."""
+    monkeypatch.setattr(multimedia, "clip_available", lambda: True)
+    calls = 0
+
+    def failing_clip(image):
+        nonlocal calls
+        calls += 1
+        if calls == fail_at:
+            raise OSError("CLIP weights unavailable")
+        return np.ones(512, dtype=np.float32) / np.sqrt(512)
+
+    monkeypatch.setattr(multimedia, "_clip_embedding", failing_clip)
+    built = multimedia.build_image_index(dataset / "complaints.csv", backend="auto")
+    assert built.backend == "handcrafted"
+    assert built.embeddings.shape == (4, 332)
+    assert any("CLIP" in warning and "fallback" in warning for warning in built.warnings)
+    matches = multimedia.search_similar(built, dataset / "images" / "C1.png", k=3,
+                                         exclude_ids=["C1"])
+    assert matches[0]["complaint_id"] == "C2"
+    assert all(match["backend"] == "handcrafted" for match in matches)
+
+
+def test_explicit_clip_failure_remains_visible(dataset, monkeypatch):
+    """Explicit CLIP requests must not silently switch retrieval methods."""
+    monkeypatch.setattr(multimedia, "clip_available", lambda: True)
+
+    def failing_clip(image):
+        raise OSError("CLIP weights unavailable")
+
+    monkeypatch.setattr(multimedia, "_clip_embedding", failing_clip)
+    with pytest.raises(OSError, match="CLIP weights unavailable"):
+        multimedia.build_image_index(dataset / "complaints.csv", backend="clip")
+
+
 def test_embedding_is_deterministic_and_handles_odd_modes():
     a = multimedia.handcrafted_embedding(_make_image("road"))
     b = multimedia.handcrafted_embedding(_make_image("road"))

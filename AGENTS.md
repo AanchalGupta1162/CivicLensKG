@@ -20,7 +20,7 @@ No Neo4j, no real cluster: "distributed" = three separately queried in-memory in
 | 1 | Knowledge graph | `knowledge_graph.py` | **Done, tested** |
 | 2 | Retrieval, ranking, explanations, duplicates | `retrieval.py` | **Done, tested** |
 | 3 | Geospatial (Haversine, radius, hotspots, Folium map) | `geo.py` | **Done, tested** |
-| 4 | Multimedia / image similarity | `multimedia.py` | not started |
+| 4 | Multimedia / image similarity | `multimedia.py` | **Done, tested; CLIP + labelled fallback** |
 | 5 | Distributed IR + Streamlit dashboard | `distributed_ir.py`, `app.py` | not started |
 
 Do not edit another member's file unless asked. Import from it instead.
@@ -130,7 +130,9 @@ eval_res = evaluate_retrieval(retriever, top_k=5)  # P@5=0.400, R@5=0.938, MRR@5
   Potholes Dataset, DbCL v1.0.
 - 10 garbage photos (C122-C131) and 9 streetlight photos (C132-C140): Wikimedia Commons, CC BY / CC BY-SA /
   public domain; keep the credits in `SOURCES.md` if you copy them.
-Photos are generic, not the places named in the CSV, and the streetlight photos show working lamps.
+Photos are generic, not the places named in the CSV. Streetlight examples use a damaged-pole
+photo (reused for eight sample complaints) and an unlit lamp photo; matching photographs do
+not establish duplicate complaints. See `image_manifest.csv` and `SOURCES.md` for credits.
 `prepare_images.py --pothole-src A --garbage-src B --streetlight-src C [--garbage-credit "..."]` regenerates or
 replaces them (any subset; categories are matched by `issue_type`, `complaints.csv` is rewritten,
 results are deterministic). Raw downloads must not be committed. If you do image search with a
@@ -139,12 +141,13 @@ fallback instead of real CLIP embeddings, label it honestly rather than calling 
 ## Commands
 ```bash
 pip install -r requirements.txt
-python -m pytest -q                        # 43 tests (17 KG + 26 retrieval), must stay green
+python -m pytest -q                        # 115 tests for Members 1–4; canonical tests/ suite
 python knowledge_graph.py                  # demo: summary + C101 reasoning paths and related reports
 python knowledge_graph.py --complaint C113 --draw demo/c113.png --related
 python retrieval.py                        # demo: hybrid search
 python retrieval.py --duplicates           # demo: multi-signal duplicate detection
 python retrieval.py --eval --compare-alphas # demo: benchmark suite (P@5, R@5, MRR@5, latency)
+python multimedia.py --query images/C101.jpg --backend auto  # image similarity demo
 ```
 
 ## Conventions and gotchas
@@ -155,3 +158,11 @@ python retrieval.py --eval --compare-alphas # demo: benchmark suite (P@5, R@5, M
 - The graph builder rejects bad data on purpose (duplicate IDs, bad status/department/importance,
   conflicting road importance, bad dates, missing coordinates). Fix the CSV rather than loosening the checks.
 - Keep scope small: one-day prototype. Prefer a working simple version over new infrastructure.
+
+## Multimedia (`multimedia.py` - Member 4)
+Use `build_image_index(csv_path, backend="auto")`, `search_similar(index, query, k=3,
+exclude_ids=None)`, `index_stats(index)`, `save_index(index, path)`, and `load_index(path)`.
+Queries accept paths, bytes, PIL images, and file-like uploads. Results include complaint ID,
+image path, cosine score, backend, and `backend_label`; show that label in the dashboard.
+Auto mode rebuilds the entire index with handcrafted features if CLIP embedding fails,
+with a warning. Explicit clip mode raises errors. Cache the index once for Member 5.

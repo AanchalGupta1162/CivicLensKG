@@ -5,7 +5,8 @@ Pillow>=10.0
 pytest>=8.0
 scikit-learn>=1.3
 sentence-transformers>=2.2
-# Other members add their own: folium, streamlit, ...
+folium>=0.15
+# Member 5 adds Streamlit when the dashboard is implemented.
 # Optional, for CLIP image search in multimedia.py (otherwise a labelled handcrafted fallback is used):
 # torch
 # transformers
