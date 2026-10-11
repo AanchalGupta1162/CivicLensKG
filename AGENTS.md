@@ -18,8 +18,8 @@ No Neo4j, no real cluster: "distributed" = three separately queried in-memory in
 | # | Module | File | Status |
 |---|--------|------|--------|
 | 1 | Knowledge graph | `knowledge_graph.py` | **Done, tested** |
-| 2 | Retrieval, ranking, explanations, duplicates | `retrieval.py` | not started |
-| 3 | Geospatial (Haversine, radius, hotspots, Folium map) | `geo.py` | not started |
+| 2 | Retrieval, ranking, explanations, duplicates | `retrieval.py` | **Done, tested** |
+| 3 | Geospatial (Haversine, radius, hotspots, Folium map) | `geo.py` | **Done, tested** |
 | 4 | Multimedia / image similarity | `multimedia.py` | not started |
 | 5 | Distributed IR + Streamlit dashboard | `distributed_ir.py`, `app.py` | not started |
 
@@ -66,6 +66,51 @@ graph_summary(G); draw_complaint_subgraph(G, id, "out.png", show_related=True); 
 `G.graph["validation_warnings"]` holds non-fatal issues (e.g. image file missing). Load the graph once
 and reuse it (in Streamlit use `@st.cache_resource`).
 
+## Hybrid Retrieval & Duplicate Detection (`retrieval.py` - Member 2)
+Combines TF-IDF lexical search and Sentence Transformers dense semantic search
+(`sentence-transformers/all-MiniLM-L6-v2`) with explainability, multi-criteria ranking,
+and multi-signal duplicate detection.
+
+Key components and conventions:
+- **Searchable Text & Lexical Expansion:** Builds document from `issue_type` + `description`.
+  Query expansion maps local road abbreviations (`WEH`, `SV Road`, `JVLR`, `AK Road`, `Stn Road`,
+  `4 Bungalows`) and issue synonyms (`crater` -> `pothole`, `trash`/`waste` -> `garbage`,
+  `street light`/`lighting` -> `streetlight`, `caved in`/`broken road` -> `damaged road`) to ensure
+  robust TF-IDF overlap.
+- **Dense Embeddings:** Precomputed unit-normalized embeddings (`all-MiniLM-L6-v2`). Cached in
+  `ComplaintRetriever` index. Query encoded on-the-fly. Negative cosine scores clamped to 0.0.
+- **Score Fusion:** $H(q, d) = \alpha \cdot L(q, d) + (1 - \alpha) \cdot D(q, d)$. Baseline $\alpha = 0.4$
+  (lexical weight), dense weight $= 0.6$. Validated empirically against alpha grid.
+- **Fallback Mode:** If model loading fails or SentenceTransformers is missing, automatically falls
+  back to lexical-only mode (`retrieval_method = "lexical_fallback"`, `dense_score = None`).
+  Deterministic `MockDenseEncoder` available for fast offline testing.
+- **Multi-Factor Ranking:** $S = 0.5 T + 0.3 G + 0.2 R$.
+  - Hard filters applied first (`status`, `issue_type`, `department`, `area`, `road_importance`).
+  - $T$: hybrid text score $H(q, d) \in [0, 1]$.
+  - $R$: road importance (Major $\to 1.0$, Minor $\to 0.5$).
+  - $G$: geographic proximity. Integration contract with Member 3 via `geo_scores: dict[str, float]`.
+    When `geo_scores` is omitted (`None`), geographic score is explicitly `None` and not fabricated.
+- **Multi-Signal Duplicate Detection:** Evaluates semantic similarity, lexical overlap, `same_issue_type`,
+  `same_road`, `same_area`, Haversine distance ($\le 250$m), and landmark extraction. Categorizes pairs
+  into:
+  - `likely_duplicate`: same issue, same road & area, close distance, matching/neutral landmarks (e.g. C101/C102, C113/C114, C113/C169, C113/C170, C122/C131, C108/C155, C111/C166, C118/C149).
+  - `related_issue`: same corridor/area but different landmarks or distance $> 250$m (e.g. C109 station exit vs C158 market junction).
+  - `low_confidence`: high semantic text similarity on different roads or areas (e.g. C110 Vile Parle vs C179 Malad, >10 km apart).
+  Does not delete or modify original records.
+  Parameters: `threshold=0.75`, `require_same_road=True`, `require_same_area=True`, `max_distance_meters=250.0`, `min_confidence="likely_duplicate"`.
+- **Explainability:** Each `SearchResult` exposes component scores, matched filters, textual rationale,
+  and knowledge graph paths/explanation if $G$ is provided. `.to_dict()` provides plain dicts for Member 5.
+
+Public API (use these; see the module docstrings for details):
+```python
+from retrieval import ComplaintRetriever, search_complaints, find_duplicate_complaints, evaluate_retrieval, compare_alpha_weights
+
+retriever = ComplaintRetriever("complaints.csv", alpha=0.4)
+results = search_complaints("unresolved pothole near bus stop", complaints="complaints.csv", top_k=5, status="Unresolved")
+dupes = find_duplicate_complaints("complaints.csv", threshold=0.75, min_confidence="likely_duplicate", G=G)
+eval_res = evaluate_retrieval(retriever, top_k=5)  # P@5=0.400, R@5=0.938, MRR@5=1.000
+```
+
 ## Retrieval and ranking rules (for Members 2 and 5)
 - Hard filters first - issue type, status, distance radius. A high score must never rescue a result
   that fails a filter.
@@ -91,9 +136,12 @@ real CLIP embeddings, label it honestly rather than calling it visual-semantic s
 ## Commands
 ```bash
 pip install -r requirements.txt
-python -m pytest -q                  # 17 tests, must stay green
-python knowledge_graph.py            # demo: summary + C101 reasoning paths and related reports
+python -m pytest -q                        # 43 tests (17 KG + 26 retrieval), must stay green
+python knowledge_graph.py                  # demo: summary + C101 reasoning paths and related reports
 python knowledge_graph.py --complaint C113 --draw demo/c113.png --related
+python retrieval.py                        # demo: hybrid search
+python retrieval.py --duplicates           # demo: multi-signal duplicate detection
+python retrieval.py --eval --compare-alphas # demo: benchmark suite (P@5, R@5, MRR@5, latency)
 ```
 
 ## Conventions and gotchas

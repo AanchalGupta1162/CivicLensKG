@@ -86,6 +86,40 @@ Who uses what:
 
 `G.graph["validation_warnings"]` lists non-fatal problems (e.g. an `image_path` whose file is missing).
 
+## Retrieval, Ranking, and Duplicate Detection (`retrieval.py` - Member 2)
+
+Hybrid Information Retrieval combining lexical matching (TF-IDF) and dense semantic search
+(`sentence-transformers/all-MiniLM-L6-v2`) with explainability and duplicate detection.
+
+```bash
+python retrieval.py                         # demo hybrid search
+python retrieval.py --duplicates            # detect potential duplicate complaint pairs
+python retrieval.py --eval                  # run 8-query evaluation benchmark (Precision@5, Recall@5, latency)
+```
+
+```python
+from retrieval import ComplaintRetriever, search_complaints, find_duplicate_complaints
+
+# Quick search:
+results = search_complaints(
+    "unresolved pothole near bus stop",
+    complaints="complaints.csv",
+    top_k=5,
+    status="Unresolved",
+    alpha=0.4,           # 0.4 lexical (TF-IDF) + 0.6 dense (Sentence Transformers)
+    rank_by="composite", # S = 0.5*T + 0.3*G + 0.2*R
+    G=G,                 # optional NetworkX graph from Member 1
+)
+for r in results:
+    print(r.complaint_id, r.ranking_score, r.hybrid_score, r.explanation)
+
+# Detect candidate duplicates:
+dupes = find_duplicate_complaints("complaints.csv", threshold=0.85, G=G)
+for d in dupes:
+    print(d.complaint_id_1, d.complaint_id_2, d.similarity, d.explanation)
+```
+
+
 ## Pothole photos (Kaggle)
 
 The 61 photos are **already in `images/`**; teammates do not need to download anything. The steps
