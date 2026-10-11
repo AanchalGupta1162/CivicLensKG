@@ -1,0 +1,163 @@
+{
+  "top_k": 5,
+  "mean_precision_at_k": 0.4,
+  "mean_recall_at_k": 0.9375,
+  "mean_mrr_at_k": 1.0,
+  "mean_latency_ms": 26.2,
+  "queries": [
+    {
+      "query": "large pothole near bus stop",
+      "expected_ids": [
+        "C101",
+        "C102",
+        "C142",
+        "C153"
+      ],
+      "retrieved_ids": [
+        "C101",
+        "C153",
+        "C142",
+        "C102",
+        "C147"
+      ],
+      "precision_at_k": 0.8,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 32.72,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "query": "overflowing garbage bin near station",
+      "expected_ids": [
+        "C122",
+        "C131"
+      ],
+      "retrieved_ids": [
+        "C131",
+        "C122",
+        "C130",
+        "C125",
+        "C128"
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 19.56,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "query": "deep pothole near Kurla bus depot",
+      "expected_ids": [
+        "C113",
+        "C114",
+        "C170"
+      ],
+      "retrieved_ids": [
+        "C113",
+        "C170",
+        "C114",
+        "C168",
+        "C167"
+      ],
+      "precision_at_k": 0.6,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 23.33,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "query": "broken streetlight pole on highway",
+      "expected_ids": [
+        "C134",
+        "C135"
+      ],
+      "retrieved_ids": [
+        "C134",
+        "C139",
+        "C135",
+        "C140",
+        "C138"
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 36.6,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "query": "asphalt peeling road damage",
+      "expected_ids": [
+        "C118",
+        "C120"
+      ],
+      "retrieved_ids": [
+        "C120",
+        "C177",
+        "C121",
+        "C150",
+        "C119"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 0.5,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 32.55,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "query": "dark stretch with broken streetlights near depot",
+      "expected_ids": [
+        "C138"
+      ],
+      "retrieved_ids": [
+        "C138",
+        "C135",
+        "C134",
+        "C133",
+        "C132"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 21.9,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "query": "pothole near school gate on S.V. Road",
+      "expected_ids": [
+        "C110"
+      ],
+      "retrieved_ids": [
+        "C110",
+        "C159",
+        "C155",
+        "C179",
+        "C116"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 21.46,
+      "retrieval_method": "hybrid"
+    },
+    {
+      "query": "uncollected garbage pile on roadside",
+      "expected_ids": [
+        "C123",
+        "C127"
+      ],
+      "retrieved_ids": [
+        "C123",
+        "C126",
+        "C128",
+        "C124",
+        "C127"
+      ],
+      "precision_at_k": 0.4,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "latency_ms": 21.48,
+      "retrieval_method": "hybrid"
+    }
+  ],
+  "retrieval_method": "hybrid"
+}

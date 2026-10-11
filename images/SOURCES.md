@@ -27,7 +27,12 @@ Photographs from Wikimedia Commons (street garbage and overflowing bins), each u
 
 ## Streetlights
 
-Photographs of street lamps from Wikimedia Commons, each used under its own open licence; click the source page for the full licence text. Resized to at most 800 px.
+The current complaint gallery uses two Wikimedia Commons photographs, resized to at most
+800 px: `02_Broken_lamp_post_Verhorechye.jpg` shows a damaged pole (C132–C134,
+C136–C140), and `04_Stra_enlaterne_kaputt_2025_01_23.jpg` shows an unlit lamp (C135).
+The first photo is reused across eight illustrative records; these are generic examples,
+not independent evidence from the CSV's locations. `image_manifest.csv` records each mapping.
+The table retains all original credits, including photos no longer used by the gallery.
 
 | File | Photographer / author | Licence | Source page |
 |---|---|---|---|

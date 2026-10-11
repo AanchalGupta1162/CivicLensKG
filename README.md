@@ -1,16 +1,20 @@
-# CivicLens KG - Member 1 deliverable (Knowledge Graph)
+# CivicLens KG - Members 1–4 prototype
 
-Everything the other modules need to know what a complaint is connected to.
+Knowledge graph, explainable retrieval, geospatial analytics, and image similarity.
 **All data is illustrative sample data** (Mumbai-area coordinates, invented complaints).
 
 ```
 CivicLensKG/
 ├── complaints.csv          # shared dataset: 80 complaints (the agreed schema)
-├── knowledge_graph.py      # the module: build graph, query relationships, explain
+├── knowledge_graph.py      # Member 1: graph, relationships, reasoning paths
+├── retrieval.py            # Member 2: hybrid search, ranking, duplicate review
+├── geo.py                  # Member 3: distance, radius, hotspots, Folium maps
+├── multimedia.py           # Member 4: CLIP / appearance-based image search
 ├── prepare_images.py       # links pothole / garbage / streetlight photos to complaints (see below)
 ├── images/                 # one photo per complaint (80) + image_manifest.csv + SOURCES.md
 ├── demo/                   # c101_graph.png, c101_related_graph.png, graph.json
-├── tests/test_knowledge_graph.py
+├── tests/                  # tests for all four modules
+├── pytest.ini              # tests/ is the canonical suite
 └── requirements.txt
 ```
 
@@ -18,7 +22,7 @@ CivicLensKG/
 
 ```bash
 pip install -r requirements.txt
-python -m pytest -q            # 17 tests
+python -m pytest -q            # 115 tests across all four modules
 python knowledge_graph.py      # demo: summary + C101 reasoning paths
 ```
 
@@ -132,9 +136,10 @@ in total), so teammates do not need to download anything. Photo sources, with pe
 | garbage (Garbage) | 10 | 10 street-garbage photos from Wikimedia Commons | CC BY / CC BY-SA / public domain, credited per photo |
 | streetlight (Streetlight) | 9 | 9 street-lamp photos from Wikimedia Commons | CC BY / CC BY-SA, credited per photo |
 
-The photos illustrate each problem in general; they do not show the places named in the CSV, and the
-streetlight photos show lamps that work, not broken ones. `images/image_manifest.csv` maps each
-complaint to the original file.
+The photos illustrate each problem in general; they do not show the places named in the CSV.
+Streetlight examples use two credited photos: a damaged pole and an unlit lamp. The damaged-pole
+photo is reused across eight illustrative complaints, so matching photos do not establish that
+complaints are duplicates. `images/image_manifest.csv` maps each complaint to its original file.
 
 ### Regenerating or replacing photos
 
@@ -153,3 +158,58 @@ For each complaint of a category it sets a blank `image_path` to `images/<id>.jp
 `SOURCES.md` (one attribution section per category). Photos are picked evenly and deterministically.
 Each folder needs at least as many photos as there are complaints of that category. Do not commit
 raw downloads, and always pass the credit text for photos that need attribution.
+
+## Geospatial analytics (Member 3)
+
+`geo.py` provides `haversine_distance`, `filter_by_radius`, `get_area_centroids`,
+`get_hotspots`, and `create_complaint_map`. Distances are kilometres. Maps require
+Folium, included in `requirements.txt`. Centroids and hotspots describe sample
+complaint coordinates and area counts, not official boundaries or real civic trends.
+
+Apply radius filtering before retrieval using eligible complaint IDs; provide
+normalised proximity scores through `geo_scores` and use `rank_by="composite"`.
+Structured issue/status/location inputs are supported; free-text queries alone
+do not automatically impose status or radius filters. Member 5 wires these steps
+and distance explanations into the dashboard.
+
+## Image similarity (Member 4)
+
+```bash
+python multimedia.py --query images/C101.jpg --backend auto
+python multimedia.py --query images/C101.jpg --backend handcrafted
+```
+
+```python
+from multimedia import build_image_index, search_similar, index_stats, save_index, load_index
+
+index = build_image_index("complaints.csv", backend="auto")
+print(index_stats(index))
+matches = search_similar(index, "images/C101.jpg", k=3, exclude_ids=["C101"])
+# query also accepts uploaded bytes, a file-like upload, or a PIL image
+for match in matches:
+    print(match["complaint_id"], match["image_path"], match["score"], match["backend_label"])
+save_index(index, "image_index.npz")
+```
+
+CLIP uses `openai/clip-vit-base-patch32`; install its optional dependencies with
+`python -m pip install torch transformers`. The first CLIP or dense-text run may
+download model weights; subsequent runs use the local model cache. `auto` tries
+CLIP, then rebuilds the entire index with colour/texture/edge features if embedding
+fails. Warnings explain the fallback. An explicit `backend="clip"` reports errors
+rather than switching methods. Always display `backend_label`: handcrafted search
+matches appearance and must not be presented as semantic retrieval.
+
+The image-search functions are ready for Member 5's upload interface. For the
+demo, display the query and its top three matches together and check relevance.
+Reused streetlight images create tied scores, resolved by complaint ID.
+
+## Remaining integration (Member 5)
+
+`app.py` and `distributed_ir.py` remain to be implemented. Use the repository root
+as the working folder; the nested `CivicLensKG/` is an older local copy. The test
+configuration excludes that copy from automatic discovery.
+
+The verified eight-query retrieval benchmark is saved in
+`demo/retrieval_evaluation.json`, including expected/retrieved IDs, Precision@5,
+Recall@5, MRR@5, latency, and retrieval method. Re-run `python retrieval.py --eval`
+after changing the data or retrieval settings.

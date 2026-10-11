@@ -11,7 +11,7 @@ ones for a query image. Two backends, chosen automatically:
 Every result carries the backend and a human-readable `backend_label`, so the
 dashboard never presents the fallback as visual-semantic search.
 
-Photos are generic pothole pictures, not the places named in the CSV
+Photos are generic civic-issue examples, not the places named in the CSV
 (see images/SOURCES.md). All complaint data is illustrative sample data.
 
 Quick use
@@ -116,8 +116,9 @@ def clip_available() -> bool:
 def _clip_embedding(image: Image.Image) -> np.ndarray:
     if "model" not in _clip_cache:
         from transformers import CLIPModel, CLIPProcessor
-        _clip_cache["model"] = CLIPModel.from_pretrained(CLIP_MODEL).eval()
-        _clip_cache["processor"] = CLIPProcessor.from_pretrained(CLIP_MODEL)
+        model = CLIPModel.from_pretrained(CLIP_MODEL).eval()
+        processor = CLIPProcessor.from_pretrained(CLIP_MODEL)
+        _clip_cache.update(model=model, processor=processor)
     import torch
     inputs = _clip_cache["processor"](images=image, return_tensors="pt")
     with torch.no_grad():
@@ -174,10 +175,12 @@ def build_image_index(
     """Embed every complaint photo listed in the CSV.
 
     image_path is resolved relative to `base_dir` (default: the CSV's folder).
-    Rows with a blank path are skipped silently (Garbage/Streetlight have no
-    photos yet); missing or unreadable files are skipped with a warning in
+    Rows with a blank path are skipped silently; missing or unreadable files
+    are skipped with a warning in
     `index.warnings`. Raises ValueError if the CSV lacks the required columns
     or has duplicate complaint ids.
+    In auto mode, a CLIP embedding failure rebuilds the entire index with
+    handcrafted features and records a warning. Explicit clip mode raises.
     """
     csv_path = Path(csv_path)
     base = Path(base_dir) if base_dir is not None else csv_path.parent
@@ -189,6 +192,7 @@ def build_image_index(
     if df["complaint_id"].duplicated().any():
         raise ValueError("duplicate complaint_id values in CSV")
 
+    requested_backend = backend
     backend = _resolve_backend(backend)
     ids: list[str] = []
     paths: list[str] = []
@@ -202,9 +206,19 @@ def build_image_index(
         except ValueError as error:
             warnings.append(f"{cid}: skipped {rel} ({error})")
             continue
+        try:
+            vector = embed_image(image, backend)
+        except Exception as error:
+            if requested_backend != "auto" or backend != "clip":
+                raise
+            fallback = build_image_index(csv_path, backend="handcrafted", base_dir=base)
+            fallback.warnings.insert(
+                0, f"CLIP embedding failed ({error}); using handcrafted fallback for all images.",
+            )
+            return fallback
         ids.append(cid)
         paths.append(rel)
-        vectors.append(embed_image(image, backend))
+        vectors.append(vector)
 
     matrix = np.vstack(vectors).astype(np.float32) if vectors else np.zeros((0, 0), np.float32)
     return ImageIndex(backend, ids, paths, matrix, warnings)
