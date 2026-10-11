@@ -63,9 +63,21 @@ def test_summary_counts(G, df):
     assert s["nodes"]["EvidenceImage"] == (df["image_path"] != "").sum()
 
 
-def test_complaints_without_image_have_no_evidence_node(G):
-    assert kg.get_evidence(G, "C122") == []
-    assert "evidence" not in kg.graph_explanation(G, "C122")
+def test_complaints_without_image_have_no_evidence_node(df):
+    no_photo = df.copy()
+    no_photo.loc[no_photo.complaint_id == "C122", "image_path"] = ""
+    G2 = kg.build_graph(no_photo)
+    assert kg.get_evidence(G2, "C122") == []
+    assert "evidence" not in kg.graph_explanation(G2, "C122")
+
+
+def test_every_complaint_has_an_existing_photo(G, df):
+    """Potholes, garbage and streetlights all have a linked photo file in images/."""
+    assert (df["image_path"] != "").all()
+    assert G.graph["validation_warnings"] == []
+    for cid in df["complaint_id"]:
+        assert all(e["exists"] for e in kg.get_evidence(G, cid)), cid
+    assert kg.graph_summary(G)["nodes"]["EvidenceImage"] == len(df)
 
 
 def test_graph_explanation_mentions_graph_links(G):
@@ -154,18 +166,31 @@ def test_export_and_draw(G, tmp_path):
 
 
 # --- prepare_images --------------------------------------------------------
-def test_prepare_images_links_one_photo_per_complaint(tmp_path):
-    src = tmp_path / "kaggle" / "images"
-    src.mkdir(parents=True)
-    for i in range(1, 101):
-        Image.new("RGB", (1600, 1200), (i, 0, 0)).save(src / f"img-{i}.jpg")
+def _fake_photos(folder: Path, n: int, color: int) -> Path:
+    folder.mkdir(parents=True)
+    for i in range(1, n + 1):
+        Image.new("RGB", (1600, 1200), (color, i, 0)).save(folder / f"img-{i}.jpg")
+    return folder
+
+
+def _project_copy(tmp_path: Path) -> Path:
+    """A copy of the dataset in the state before garbage/streetlight photos were added."""
     project = tmp_path / "proj"
     project.mkdir()
-    (project / "complaints.csv").write_text(CSV.read_text())
+    df0 = kg.load_complaints(CSV)
+    df0.loc[df0.issue_type.isin(["Garbage", "Streetlight"]), "image_path"] = ""
+    df0.to_csv(project / "complaints.csv", index=False, lineterminator="\n")
+    return project
 
-    chosen = prepare_images.prepare(tmp_path / "kaggle", project / "complaints.csv")
 
-    expected = (kg.load_complaints(CSV)["image_path"] != "").sum()
+def test_prepare_images_links_one_photo_per_complaint(tmp_path):
+    src = _fake_photos(tmp_path / "kaggle" / "images", 100, 1)
+    project = _project_copy(tmp_path)
+
+    chosen = prepare_images.prepare({"pothole": tmp_path / "kaggle"}, project / "complaints.csv")
+
+    expected = (kg.load_complaints(project / "complaints.csv")["image_path"] != "").sum()
+    assert expected == 61  # pothole + damaged road complaints only
     assert len(chosen) == expected
     assert len({s for _, _, s in chosen}) == expected  # no photo reused
     with Image.open(project / "images" / "C101.jpg") as im:
@@ -175,3 +200,55 @@ def test_prepare_images_links_one_photo_per_complaint(tmp_path):
     G2 = kg.load_graph(project / "complaints.csv")
     assert all(e["exists"] for e in kg.get_evidence(G2, "C101"))
     assert not G2.graph["validation_warnings"]
+
+
+def test_prepare_images_all_three_categories_fill_the_csv(tmp_path):
+    project = _project_copy(tmp_path)
+    prepare_images.prepare(
+        {
+            "pothole": _fake_photos(tmp_path / "p", 100, 1),
+            "garbage": _fake_photos(tmp_path / "g", 40, 2),
+            "streetlight": _fake_photos(tmp_path / "s", 30, 3),
+        },
+        project / "complaints.csv",
+        credits={"streetlight": "Test credit for lamps"},
+    )
+
+    df2 = kg.load_complaints(project / "complaints.csv")
+    assert (df2["image_path"] != "").all()          # every complaint now has a photo
+    assert df2.loc[df2.complaint_id == "C122", "image_path"].item() == "images/C122.jpg"
+    assert list(df2.columns) == kg.REQUIRED_COLUMNS  # schema untouched
+    assert len(df2) == len(kg.load_complaints(CSV))
+    manifest = (project / "images" / "image_manifest.csv").read_text()
+    assert "C122" in manifest and "C135" in manifest and "C101" in manifest
+    sources = (project / "images" / "SOURCES.md").read_text()
+    assert "## Potholes and damaged roads" in sources
+    assert "## Garbage" in sources and "hammadarshad18" in sources
+    assert "## Streetlights" in sources and "Test credit for lamps" in sources
+    G2 = kg.load_graph(project / "complaints.csv")
+    assert not G2.graph["validation_warnings"]
+    assert kg.get_evidence(G2, "C135")[0]["exists"] is True
+
+
+def test_prepare_images_one_category_leaves_others_alone(tmp_path):
+    project = _project_copy(tmp_path)
+    prepare_images.prepare({"pothole": _fake_photos(tmp_path / "p", 100, 1)}, project / "complaints.csv")
+    before = (project / "images" / "C101.jpg").read_bytes()
+
+    prepare_images.prepare({"garbage": _fake_photos(tmp_path / "g", 40, 2)}, project / "complaints.csv")
+
+    assert (project / "images" / "C101.jpg").read_bytes() == before
+    manifest = (project / "images" / "image_manifest.csv").read_text()
+    assert "C101" in manifest and "C122" in manifest and "C135" not in manifest
+    df2 = kg.load_complaints(project / "complaints.csv")
+    streetlight = df2[df2.issue_type == "Streetlight"]
+    assert (streetlight["image_path"] == "").all()
+
+
+def test_prepare_images_too_few_photos_changes_nothing(tmp_path):
+    project = _project_copy(tmp_path)
+    before = (project / "complaints.csv").read_text()
+    with pytest.raises(SystemExit):
+        prepare_images.prepare({"garbage": _fake_photos(tmp_path / "g", 3, 2)}, project / "complaints.csv")
+    assert (project / "complaints.csv").read_text() == before
+    assert not list((project / "images").glob("*.jpg")) if (project / "images").exists() else True
