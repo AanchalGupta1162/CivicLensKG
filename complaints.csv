@@ -20,25 +20,25 @@ C118,Damaged Road,Road surface cracked and caved in after pipeline work,19.1200,
 C119,Damaged Road,Broken road edge and exposed gravel on Link Road,19.1655,72.8520,Goregaon,Link Road,Major,Roads,In Progress,images/C119.jpg,2026-09-12
 C120,Damaged Road,Road surface peeling off near Kurla junction,19.0720,72.8835,Kurla,Andheri-Kurla Road,Major,Roads,Unresolved,images/C120.jpg,2026-10-02
 C121,Damaged Road,Cracked and sunken road patch on hill road,19.0605,72.8310,Bandra,Pali Hill Road,Minor,Roads,Unresolved,images/C121.jpg,2026-09-22
-C122,Garbage,Overflowing garbage bin near Andheri station,19.1195,72.8466,Andheri,Main Road,Major,Sanitation,Unresolved,,2026-10-09
-C123,Garbage,Uncollected garbage pile on roadside for three days,19.1210,72.8440,Andheri,Four Bungalows Road,Minor,Sanitation,Unresolved,,2026-10-04
-C124,Garbage,Garbage dumped under the highway flyover,19.1140,72.8690,Andheri,Western Express Highway,Major,Sanitation,Resolved,,2026-09-15
-C125,Garbage,Overflowing community bin and foul smell,19.1362,72.8495,Jogeshwari,S.V. Road,Major,Sanitation,Unresolved,,2026-10-08
-C126,Garbage,Garbage not collected from station road,19.0992,72.8438,Vile Parle,Station Road,Minor,Sanitation,In Progress,,2026-10-01
-C127,Garbage,Waste piled beside the footpath,19.0598,72.8297,Bandra,Pali Hill Road,Minor,Sanitation,Unresolved,,2026-10-05
-C128,Garbage,Large garbage heap near bus depot,19.0735,72.8815,Kurla,Andheri-Kurla Road,Major,Sanitation,Unresolved,,2026-10-07
-C129,Garbage,Construction debris dumped on footpath,19.1172,72.9055,Powai,Chandivali Road,Minor,Sanitation,Resolved,,2026-09-10
-C130,Garbage,Garbage bin overflowing outside mall,19.1660,72.8524,Goregaon,Link Road,Major,Sanitation,Unresolved,,2026-10-09
-C131,Garbage,Garbage bin overflowing at station entrance,19.1196,72.8467,Andheri,Main Road,Major,Sanitation,Unresolved,,2026-10-10
-C132,Streetlight,Streetlight not working near bus stop,19.1194,72.8464,Andheri,Main Road,Major,Streetlight,Unresolved,,2026-10-03
-C133,Streetlight,Streetlight flickering at night on narrow lane,19.1235,72.8425,Andheri,Four Bungalows Road,Minor,Streetlight,Unresolved,,2026-09-29
-C134,Streetlight,Broken streetlight pole on highway,19.1155,72.8695,Andheri,Western Express Highway,Major,Streetlight,In Progress,,2026-09-27
-C135,Streetlight,Three streetlights out along the highway,19.1358,72.8558,Jogeshwari,Western Express Highway,Major,Streetlight,Unresolved,,2026-10-06
-C136,Streetlight,Streetlight stays on during the day,19.0988,72.8445,Vile Parle,S.V. Road,Major,Streetlight,Resolved,,2026-09-05
-C137,Streetlight,Streetlight not working at Bandra signal,19.0597,72.8293,Bandra,S.V. Road,Major,Streetlight,Unresolved,,2026-10-02
-C138,Streetlight,Dark stretch with broken streetlights near depot,19.0727,72.8822,Kurla,Andheri-Kurla Road,Major,Streetlight,Unresolved,,2026-10-08
-C139,Streetlight,Streetlight pole damaged near Powai lake junction,19.1178,72.9062,Powai,JVLR,Major,Streetlight,Unresolved,,2026-10-09
-C140,Streetlight,Streetlight repaired but still flickering,19.1665,72.8528,Goregaon,Link Road,Major,Streetlight,Resolved,,2026-09-01
+C122,Garbage,Overflowing garbage bin near Andheri station,19.1195,72.8466,Andheri,Main Road,Major,Sanitation,Unresolved,images/C122.jpg,2026-10-09
+C123,Garbage,Uncollected garbage pile on roadside for three days,19.1210,72.8440,Andheri,Four Bungalows Road,Minor,Sanitation,Unresolved,images/C123.jpg,2026-10-04
+C124,Garbage,Garbage dumped under the highway flyover,19.1140,72.8690,Andheri,Western Express Highway,Major,Sanitation,Resolved,images/C124.jpg,2026-09-15
+C125,Garbage,Overflowing community bin and foul smell,19.1362,72.8495,Jogeshwari,S.V. Road,Major,Sanitation,Unresolved,images/C125.jpg,2026-10-08
+C126,Garbage,Garbage not collected from station road,19.0992,72.8438,Vile Parle,Station Road,Minor,Sanitation,In Progress,images/C126.jpg,2026-10-01
+C127,Garbage,Waste piled beside the footpath,19.0598,72.8297,Bandra,Pali Hill Road,Minor,Sanitation,Unresolved,images/C127.jpg,2026-10-05
+C128,Garbage,Large garbage heap near bus depot,19.0735,72.8815,Kurla,Andheri-Kurla Road,Major,Sanitation,Unresolved,images/C128.jpg,2026-10-07
+C129,Garbage,Construction debris dumped on footpath,19.1172,72.9055,Powai,Chandivali Road,Minor,Sanitation,Resolved,images/C129.jpg,2026-09-10
+C130,Garbage,Garbage bin overflowing outside mall,19.1660,72.8524,Goregaon,Link Road,Major,Sanitation,Unresolved,images/C130.jpg,2026-10-09
+C131,Garbage,Garbage bin overflowing at station entrance,19.1196,72.8467,Andheri,Main Road,Major,Sanitation,Unresolved,images/C131.jpg,2026-10-10
+C132,Streetlight,Streetlight not working near bus stop,19.1194,72.8464,Andheri,Main Road,Major,Streetlight,Unresolved,images/C132.jpg,2026-10-03
+C133,Streetlight,Streetlight flickering at night on narrow lane,19.1235,72.8425,Andheri,Four Bungalows Road,Minor,Streetlight,Unresolved,images/C133.jpg,2026-09-29
+C134,Streetlight,Broken streetlight pole on highway,19.1155,72.8695,Andheri,Western Express Highway,Major,Streetlight,In Progress,images/C134.jpg,2026-09-27
+C135,Streetlight,Three streetlights out along the highway,19.1358,72.8558,Jogeshwari,Western Express Highway,Major,Streetlight,Unresolved,images/C135.jpg,2026-10-06
+C136,Streetlight,Streetlight stays on during the day,19.0988,72.8445,Vile Parle,S.V. Road,Major,Streetlight,Resolved,images/C136.jpg,2026-09-05
+C137,Streetlight,Streetlight not working at Bandra signal,19.0597,72.8293,Bandra,S.V. Road,Major,Streetlight,Unresolved,images/C137.jpg,2026-10-02
+C138,Streetlight,Dark stretch with broken streetlights near depot,19.0727,72.8822,Kurla,Andheri-Kurla Road,Major,Streetlight,Unresolved,images/C138.jpg,2026-10-08
+C139,Streetlight,Streetlight pole damaged near Powai lake junction,19.1178,72.9062,Powai,JVLR,Major,Streetlight,Unresolved,images/C139.jpg,2026-10-09
+C140,Streetlight,Streetlight repaired but still flickering,19.1665,72.8528,Goregaon,Link Road,Major,Streetlight,Resolved,images/C140.jpg,2026-09-01
 C141,Pothole,Pothole on Main Road opposite the post office,19.1203,72.8473,Andheri,Main Road,Major,Roads,Unresolved,images/C141.jpg,2026-10-11
 C142,Pothole,Two potholes close together near Andheri bus stop,19.1194,72.8471,Andheri,Main Road,Major,Roads,Unresolved,images/C142.jpg,2026-10-08
 C143,Pothole,Pothole near the Andheri flyover ramp,19.1186,72.8458,Andheri,S.V. Road,Major,Roads,In Progress,images/C143.jpg,2026-09-26

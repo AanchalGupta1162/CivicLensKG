@@ -514,6 +514,13 @@
       "id": "Department:Sanitation"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C122.jpg",
+      "path": "images/C122.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C122.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C123",
       "issue_type": "Garbage",
@@ -523,6 +530,13 @@
       "status": "Unresolved",
       "created_date": "2026-10-04",
       "id": "Complaint:C123"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C123.jpg",
+      "path": "images/C123.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C123.jpg"
     },
     {
       "node_type": "Complaint",
@@ -536,6 +550,13 @@
       "id": "Complaint:C124"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C124.jpg",
+      "path": "images/C124.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C124.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C125",
       "issue_type": "Garbage",
@@ -545,6 +566,13 @@
       "status": "Unresolved",
       "created_date": "2026-10-08",
       "id": "Complaint:C125"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C125.jpg",
+      "path": "images/C125.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C125.jpg"
     },
     {
       "node_type": "Complaint",
@@ -558,6 +586,13 @@
       "id": "Complaint:C126"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C126.jpg",
+      "path": "images/C126.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C126.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C127",
       "issue_type": "Garbage",
@@ -567,6 +602,13 @@
       "status": "Unresolved",
       "created_date": "2026-10-05",
       "id": "Complaint:C127"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C127.jpg",
+      "path": "images/C127.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C127.jpg"
     },
     {
       "node_type": "Complaint",
@@ -580,6 +622,13 @@
       "id": "Complaint:C128"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C128.jpg",
+      "path": "images/C128.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C128.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C129",
       "issue_type": "Garbage",
@@ -589,6 +638,13 @@
       "status": "Resolved",
       "created_date": "2026-09-10",
       "id": "Complaint:C129"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C129.jpg",
+      "path": "images/C129.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C129.jpg"
     },
     {
       "node_type": "Complaint",
@@ -602,6 +658,13 @@
       "id": "Complaint:C130"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C130.jpg",
+      "path": "images/C130.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C130.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C131",
       "issue_type": "Garbage",
@@ -611,6 +674,13 @@
       "status": "Unresolved",
       "created_date": "2026-10-10",
       "id": "Complaint:C131"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C131.jpg",
+      "path": "images/C131.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C131.jpg"
     },
     {
       "node_type": "Complaint",
@@ -629,6 +699,13 @@
       "id": "Department:Streetlight"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C132.jpg",
+      "path": "images/C132.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C132.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C133",
       "issue_type": "Streetlight",
@@ -638,6 +715,13 @@
       "status": "Unresolved",
       "created_date": "2026-09-29",
       "id": "Complaint:C133"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C133.jpg",
+      "path": "images/C133.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C133.jpg"
     },
     {
       "node_type": "Complaint",
@@ -651,6 +735,13 @@
       "id": "Complaint:C134"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C134.jpg",
+      "path": "images/C134.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C134.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C135",
       "issue_type": "Streetlight",
@@ -660,6 +751,13 @@
       "status": "Unresolved",
       "created_date": "2026-10-06",
       "id": "Complaint:C135"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C135.jpg",
+      "path": "images/C135.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C135.jpg"
     },
     {
       "node_type": "Complaint",
@@ -673,6 +771,13 @@
       "id": "Complaint:C136"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C136.jpg",
+      "path": "images/C136.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C136.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C137",
       "issue_type": "Streetlight",
@@ -682,6 +787,13 @@
       "status": "Unresolved",
       "created_date": "2026-10-02",
       "id": "Complaint:C137"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C137.jpg",
+      "path": "images/C137.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C137.jpg"
     },
     {
       "node_type": "Complaint",
@@ -695,6 +807,13 @@
       "id": "Complaint:C138"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C138.jpg",
+      "path": "images/C138.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C138.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C139",
       "issue_type": "Streetlight",
@@ -706,6 +825,13 @@
       "id": "Complaint:C139"
     },
     {
+      "node_type": "EvidenceImage",
+      "label": "C139.jpg",
+      "path": "images/C139.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C139.jpg"
+    },
+    {
       "node_type": "Complaint",
       "label": "C140",
       "issue_type": "Streetlight",
@@ -715,6 +841,13 @@
       "status": "Resolved",
       "created_date": "2026-09-01",
       "id": "Complaint:C140"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C140.jpg",
+      "path": "images/C140.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C140.jpg"
     },
     {
       "node_type": "Complaint",
@@ -2009,6 +2142,11 @@
       "target": "Department:Sanitation"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C122",
+      "target": "EvidenceImage:images/C122.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C123",
       "target": "Location:Andheri"
@@ -2022,6 +2160,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C123",
       "target": "Department:Sanitation"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C123",
+      "target": "EvidenceImage:images/C123.jpg"
     },
     {
       "relation": "LOCATED_AT",
@@ -2039,6 +2182,11 @@
       "target": "Department:Sanitation"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C124",
+      "target": "EvidenceImage:images/C124.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C125",
       "target": "Location:Jogeshwari"
@@ -2052,6 +2200,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C125",
       "target": "Department:Sanitation"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C125",
+      "target": "EvidenceImage:images/C125.jpg"
     },
     {
       "relation": "LOCATED_AT",
@@ -2069,6 +2222,11 @@
       "target": "Department:Sanitation"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C126",
+      "target": "EvidenceImage:images/C126.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C127",
       "target": "Location:Bandra"
@@ -2084,6 +2242,11 @@
       "target": "Department:Sanitation"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C127",
+      "target": "EvidenceImage:images/C127.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C128",
       "target": "Location:Kurla"
@@ -2097,6 +2260,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C128",
       "target": "Department:Sanitation"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C128",
+      "target": "EvidenceImage:images/C128.jpg"
     },
     {
       "relation": "LOCATED_AT",
@@ -2114,6 +2282,11 @@
       "target": "Department:Sanitation"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C129",
+      "target": "EvidenceImage:images/C129.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C130",
       "target": "Location:Goregaon"
@@ -2129,6 +2302,11 @@
       "target": "Department:Sanitation"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C130",
+      "target": "EvidenceImage:images/C130.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C131",
       "target": "Location:Andheri"
@@ -2144,6 +2322,11 @@
       "target": "Department:Sanitation"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C131",
+      "target": "EvidenceImage:images/C131.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C132",
       "target": "Location:Andheri"
@@ -2157,6 +2340,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C132",
       "target": "Department:Streetlight"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C132",
+      "target": "EvidenceImage:images/C132.jpg"
     },
     {
       "relation": "LOCATED_AT",
@@ -2174,6 +2362,11 @@
       "target": "Department:Streetlight"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C133",
+      "target": "EvidenceImage:images/C133.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C134",
       "target": "Location:Andheri"
@@ -2187,6 +2380,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C134",
       "target": "Department:Streetlight"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C134",
+      "target": "EvidenceImage:images/C134.jpg"
     },
     {
       "relation": "LOCATED_AT",
@@ -2204,6 +2402,11 @@
       "target": "Department:Streetlight"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C135",
+      "target": "EvidenceImage:images/C135.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C136",
       "target": "Location:Vile Parle"
@@ -2217,6 +2420,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C136",
       "target": "Department:Streetlight"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C136",
+      "target": "EvidenceImage:images/C136.jpg"
     },
     {
       "relation": "LOCATED_AT",
@@ -2234,6 +2442,11 @@
       "target": "Department:Streetlight"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C137",
+      "target": "EvidenceImage:images/C137.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C138",
       "target": "Location:Kurla"
@@ -2247,6 +2460,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C138",
       "target": "Department:Streetlight"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C138",
+      "target": "EvidenceImage:images/C138.jpg"
     },
     {
       "relation": "LOCATED_AT",
@@ -2264,6 +2482,11 @@
       "target": "Department:Streetlight"
     },
     {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C139",
+      "target": "EvidenceImage:images/C139.jpg"
+    },
+    {
       "relation": "LOCATED_AT",
       "source": "Complaint:C140",
       "target": "Location:Goregaon"
@@ -2277,6 +2500,11 @@
       "relation": "ASSIGNED_TO",
       "source": "Complaint:C140",
       "target": "Department:Streetlight"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C140",
+      "target": "EvidenceImage:images/C140.jpg"
     },
     {
       "relation": "LOCATED_AT",
