@@ -1,0 +1,81 @@
+complaint_id,issue_type,description,latitude,longitude,area,road_name,road_importance,department,status,image_path,created_date
+C101,Pothole,Large pothole near bus stop,19.1197,72.8468,Andheri,Main Road,Major,Roads,Unresolved,images/C101.jpg,2026-10-10
+C102,Pothole,Big pothole close to the bus stop on Main Road causing traffic slowdown,19.1199,72.8470,Andheri,Main Road,Major,Roads,Unresolved,images/C102.jpg,2026-10-09
+C103,Pothole,Deep pothole filled with water after rain near Andheri station,19.1190,72.8465,Andheri,S.V. Road,Major,Roads,Unresolved,images/C103.jpg,2026-10-05
+C104,Pothole,Small pothole on narrow lane near the market,19.1230,72.8420,Andheri,Four Bungalows Road,Minor,Roads,Unresolved,images/C104.jpg,2026-09-28
+C105,Pothole,Pothole cluster on highway service lane near flyover,19.1150,72.8690,Andheri,Western Express Highway,Major,Roads,Unresolved,images/C105.jpg,2026-10-02
+C106,Pothole,Pothole on highway causing two-wheeler skids,19.1160,72.8700,Andheri,Western Express Highway,Major,Roads,In Progress,images/C106.jpg,2026-09-30
+C107,Pothole,Wide pothole on highway near Jogeshwari flyover,19.1360,72.8560,Jogeshwari,Western Express Highway,Major,Roads,Unresolved,images/C107.jpg,2026-10-07
+C108,Pothole,Pothole beside Jogeshwari station bridge,19.1355,72.8488,Jogeshwari,S.V. Road,Major,Roads,Resolved,images/C108.jpg,2026-08-20
+C109,Pothole,Pothole outside Vile Parle station exit,19.0995,72.8442,Vile Parle,Station Road,Minor,Roads,Unresolved,images/C109.jpg,2026-10-03
+C110,Pothole,Pothole near school gate on S.V. Road,19.0985,72.8450,Vile Parle,S.V. Road,Major,Roads,In Progress,images/C110.jpg,2026-09-25
+C111,Pothole,Large pothole at Bandra signal,19.0600,72.8300,Bandra,S.V. Road,Major,Roads,Unresolved,images/C111.jpg,2026-10-08
+C112,Pothole,Pothole on residential hill road,19.0590,72.8290,Bandra,Pali Hill Road,Minor,Roads,Resolved,images/C112.jpg,2026-08-30
+C113,Pothole,Deep pothole on Andheri-Kurla Road near Kurla bus depot,19.0730,72.8830,Kurla,Andheri-Kurla Road,Major,Roads,Unresolved,images/C113.jpg,2026-10-06
+C114,Pothole,Pothole near Kurla bus depot damaging tyres,19.0725,72.8820,Kurla,Andheri-Kurla Road,Major,Roads,Unresolved,images/C114.jpg,2026-10-06
+C115,Pothole,Pothole on JVLR near Powai lake junction,19.1180,72.9060,Powai,JVLR,Major,Roads,Unresolved,images/C115.jpg,2026-10-01
+C116,Pothole,Pothole in front of apartment gate,19.1170,72.9070,Powai,Chandivali Road,Minor,Roads,Resolved,images/C116.jpg,2026-09-02
+C117,Pothole,Pothole on Link Road near Goregaon mall,19.1670,72.8530,Goregaon,Link Road,Major,Roads,Unresolved,images/C117.jpg,2026-10-04
+C118,Damaged Road,Road surface cracked and caved in after pipeline work,19.1200,72.8480,Andheri,Main Road,Major,Roads,Unresolved,images/C118.jpg,2026-09-18
+C119,Damaged Road,Broken road edge and exposed gravel on Link Road,19.1655,72.8520,Goregaon,Link Road,Major,Roads,In Progress,images/C119.jpg,2026-09-12
+C120,Damaged Road,Road surface peeling off near Kurla junction,19.0720,72.8835,Kurla,Andheri-Kurla Road,Major,Roads,Unresolved,images/C120.jpg,2026-10-02
+C121,Damaged Road,Cracked and sunken road patch on hill road,19.0605,72.8310,Bandra,Pali Hill Road,Minor,Roads,Unresolved,images/C121.jpg,2026-09-22
+C122,Garbage,Overflowing garbage bin near Andheri station,19.1195,72.8466,Andheri,Main Road,Major,Sanitation,Unresolved,,2026-10-09
+C123,Garbage,Uncollected garbage pile on roadside for three days,19.1210,72.8440,Andheri,Four Bungalows Road,Minor,Sanitation,Unresolved,,2026-10-04
+C124,Garbage,Garbage dumped under the highway flyover,19.1140,72.8690,Andheri,Western Express Highway,Major,Sanitation,Resolved,,2026-09-15
+C125,Garbage,Overflowing community bin and foul smell,19.1362,72.8495,Jogeshwari,S.V. Road,Major,Sanitation,Unresolved,,2026-10-08
+C126,Garbage,Garbage not collected from station road,19.0992,72.8438,Vile Parle,Station Road,Minor,Sanitation,In Progress,,2026-10-01
+C127,Garbage,Waste piled beside the footpath,19.0598,72.8297,Bandra,Pali Hill Road,Minor,Sanitation,Unresolved,,2026-10-05
+C128,Garbage,Large garbage heap near bus depot,19.0735,72.8815,Kurla,Andheri-Kurla Road,Major,Sanitation,Unresolved,,2026-10-07
+C129,Garbage,Construction debris dumped on footpath,19.1172,72.9055,Powai,Chandivali Road,Minor,Sanitation,Resolved,,2026-09-10
+C130,Garbage,Garbage bin overflowing outside mall,19.1660,72.8524,Goregaon,Link Road,Major,Sanitation,Unresolved,,2026-10-09
+C131,Garbage,Garbage bin overflowing at station entrance,19.1196,72.8467,Andheri,Main Road,Major,Sanitation,Unresolved,,2026-10-10
+C132,Streetlight,Streetlight not working near bus stop,19.1194,72.8464,Andheri,Main Road,Major,Streetlight,Unresolved,,2026-10-03
+C133,Streetlight,Streetlight flickering at night on narrow lane,19.1235,72.8425,Andheri,Four Bungalows Road,Minor,Streetlight,Unresolved,,2026-09-29
+C134,Streetlight,Broken streetlight pole on highway,19.1155,72.8695,Andheri,Western Express Highway,Major,Streetlight,In Progress,,2026-09-27
+C135,Streetlight,Three streetlights out along the highway,19.1358,72.8558,Jogeshwari,Western Express Highway,Major,Streetlight,Unresolved,,2026-10-06
+C136,Streetlight,Streetlight stays on during the day,19.0988,72.8445,Vile Parle,S.V. Road,Major,Streetlight,Resolved,,2026-09-05
+C137,Streetlight,Streetlight not working at Bandra signal,19.0597,72.8293,Bandra,S.V. Road,Major,Streetlight,Unresolved,,2026-10-02
+C138,Streetlight,Dark stretch with broken streetlights near depot,19.0727,72.8822,Kurla,Andheri-Kurla Road,Major,Streetlight,Unresolved,,2026-10-08
+C139,Streetlight,Streetlight pole damaged near Powai lake junction,19.1178,72.9062,Powai,JVLR,Major,Streetlight,Unresolved,,2026-10-09
+C140,Streetlight,Streetlight repaired but still flickering,19.1665,72.8528,Goregaon,Link Road,Major,Streetlight,Resolved,,2026-09-01
+C141,Pothole,Pothole on Main Road opposite the post office,19.1203,72.8473,Andheri,Main Road,Major,Roads,Unresolved,images/C141.jpg,2026-10-11
+C142,Pothole,Two potholes close together near Andheri bus stop,19.1194,72.8471,Andheri,Main Road,Major,Roads,Unresolved,images/C142.jpg,2026-10-08
+C143,Pothole,Pothole near the Andheri flyover ramp,19.1186,72.8458,Andheri,S.V. Road,Major,Roads,In Progress,images/C143.jpg,2026-09-26
+C144,Pothole,Deep pothole outside the Andheri court gate,19.1182,72.8477,Andheri,S.V. Road,Major,Roads,Unresolved,images/C144.jpg,2026-10-01
+C145,Pothole,Pothole in front of the temple on Four Bungalows Road,19.1238,72.8412,Andheri,Four Bungalows Road,Minor,Roads,Unresolved,images/C145.jpg,2026-10-05
+C146,Pothole,Rain-damaged pothole on Lokhandwala Back Road,19.1325,72.8305,Andheri,Lokhandwala Back Road,Minor,Roads,Resolved,images/C146.jpg,2026-08-28
+C147,Pothole,Large pothole near the metro station exit,19.1141,72.8683,Andheri,Western Express Highway,Major,Roads,Unresolved,images/C147.jpg,2026-10-09
+C148,Pothole,Pothole on highway service road near the airport signal,19.1128,72.8675,Andheri,Western Express Highway,Major,Roads,In Progress,images/C148.jpg,2026-09-21
+C149,Damaged Road,Road caved in near the water pipeline junction,19.1207,72.8466,Andheri,Main Road,Major,Roads,Unresolved,images/C149.jpg,2026-09-30
+C150,Damaged Road,Crumbling road edge beside the drain,19.1219,72.8431,Andheri,Four Bungalows Road,Minor,Roads,Unresolved,images/C150.jpg,2026-10-03
+C151,Pothole,Pothole on Link Road near the Andheri sports complex,19.1275,72.8338,Andheri,Link Road,Major,Roads,Unresolved,images/C151.jpg,2026-10-07
+C152,Pothole,Pothole outside the Andheri market lane,19.1226,72.8428,Andheri,Four Bungalows Road,Minor,Roads,Resolved,images/C152.jpg,2026-09-08
+C153,Pothole,Pothole near Jogeshwari flyover bus stop,19.1352,72.8552,Jogeshwari,Western Express Highway,Major,Roads,Unresolved,images/C153.jpg,2026-10-10
+C154,Pothole,Cluster of potholes on JVLR near the cave road,19.1372,72.8625,Jogeshwari,JVLR,Major,Roads,Unresolved,images/C154.jpg,2026-10-04
+C155,Pothole,Pothole on S.V. Road beside Jogeshwari station,19.1348,72.8493,Jogeshwari,S.V. Road,Major,Roads,In Progress,images/C155.jpg,2026-09-19
+C156,Damaged Road,Broken concrete patch near Jogeshwari bridge,19.1366,72.8541,Jogeshwari,Western Express Highway,Major,Roads,Unresolved,images/C156.jpg,2026-09-27
+C157,Pothole,Pothole on Nehru Road near the airport gate,19.0985,72.8512,Vile Parle,Nehru Road,Major,Roads,Unresolved,images/C157.jpg,2026-10-06
+C158,Pothole,Pothole at Vile Parle market junction,19.0999,72.8447,Vile Parle,Station Road,Minor,Roads,Resolved,images/C158.jpg,2026-09-03
+C159,Pothole,Deep pothole on S.V. Road near the college,19.0976,72.8444,Vile Parle,S.V. Road,Major,Roads,Unresolved,images/C159.jpg,2026-10-02
+C160,Pothole,Pothole outside Santacruz station west,19.0813,72.8412,Santacruz,Nehru Road,Major,Roads,Unresolved,images/C160.jpg,2026-10-08
+C161,Damaged Road,Road surface worn out near Santacruz junction,19.0806,72.8421,Santacruz,Nehru Road,Major,Roads,In Progress,images/C161.jpg,2026-09-14
+C162,Pothole,Pothole on Linking Road near the shopping stretch,19.0653,72.8338,Bandra,Linking Road,Major,Roads,Unresolved,images/C162.jpg,2026-10-09
+C163,Pothole,Pothole at Bandra station east approach,19.0611,72.8349,Bandra,S.V. Road,Major,Roads,Unresolved,images/C163.jpg,2026-10-05
+C164,Pothole,Pothole on Pali Hill Road bend,19.0652,72.8239,Bandra,Pali Hill Road,Minor,Roads,Resolved,images/C164.jpg,2026-09-06
+C165,Damaged Road,Subsidence on Linking Road after cable laying,19.0644,72.8331,Bandra,Linking Road,Major,Roads,Unresolved,images/C165.jpg,2026-10-01
+C166,Pothole,Waterlogged pothole near the Bandra signal,19.0593,72.8302,Bandra,S.V. Road,Major,Roads,In Progress,images/C166.jpg,2026-09-29
+C167,Pothole,Pothole on LBS Marg near Kurla station,19.0713,72.879,Kurla,LBS Marg,Major,Roads,Unresolved,images/C167.jpg,2026-10-10
+C168,Pothole,Pothole outside the Kurla market,19.0721,72.8805,Kurla,LBS Marg,Major,Roads,Unresolved,images/C168.jpg,2026-10-07
+C169,Pothole,Pothole on Andheri-Kurla Road near the bus depot gate,19.0733,72.8826,Kurla,Andheri-Kurla Road,Major,Roads,In Progress,images/C169.jpg,2026-09-24
+C170,Pothole,Pothole opposite the Kurla bus depot exit,19.0728,72.8828,Kurla,Andheri-Kurla Road,Major,Roads,Unresolved,images/C170.jpg,2026-10-06
+C171,Damaged Road,Road cracked and sinking near the LBS junction,19.0709,72.8797,Kurla,LBS Marg,Major,Roads,Unresolved,images/C171.jpg,2026-09-17
+C172,Pothole,Pothole on JVLR near the Powai flyover,19.1186,72.9054,Powai,JVLR,Major,Roads,Unresolved,images/C172.jpg,2026-10-03
+C173,Pothole,Pothole at the Chandivali Road turn,19.1168,72.9081,Powai,Chandivali Road,Minor,Roads,In Progress,images/C173.jpg,2026-09-23
+C174,Damaged Road,Broken road edge near Powai lake,19.119,72.9071,Powai,JVLR,Major,Roads,Resolved,images/C174.jpg,2026-09-01
+C175,Pothole,Pothole on Link Road beside the Goregaon petrol pump,19.1658,72.8541,Goregaon,Link Road,Major,Roads,Unresolved,images/C175.jpg,2026-10-08
+C176,Pothole,Pothole on Aarey Road near the colony gate,19.1649,72.8689,Goregaon,Aarey Road,Minor,Roads,Unresolved,images/C176.jpg,2026-09-20
+C177,Damaged Road,Washed out road section on Aarey Road,19.1671,72.8702,Goregaon,Aarey Road,Minor,Roads,In Progress,images/C177.jpg,2026-09-09
+C178,Pothole,Pothole on Link Road near Malad flyover,19.1865,72.8494,Malad,Link Road,Major,Roads,Unresolved,images/C178.jpg,2026-10-11
+C179,Pothole,Pothole on Marve Road near the school,19.1893,72.8362,Malad,Marve Road,Minor,Roads,Resolved,images/C179.jpg,2026-08-25
+C180,Damaged Road,Road surface broken near the Malad railway bridge,19.1878,72.8481,Malad,Link Road,Major,Roads,Unresolved,images/C180.jpg,2026-10-02
