@@ -1,0 +1,3117 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {
+    "validation_warnings": []
+  },
+  "nodes": [
+    {
+      "node_type": "Complaint",
+      "label": "C101",
+      "issue_type": "Pothole",
+      "description": "Large pothole near bus stop",
+      "latitude": 19.1197,
+      "longitude": 72.8468,
+      "status": "Unresolved",
+      "created_date": "2026-10-10",
+      "id": "Complaint:C101"
+    },
+    {
+      "node_type": "Location",
+      "label": "Andheri",
+      "latitude": 19.119903846153846,
+      "longitude": 72.84983461538462,
+      "id": "Location:Andheri"
+    },
+    {
+      "node_type": "Road",
+      "label": "Main Road",
+      "importance": "Major",
+      "id": "Road:Main Road"
+    },
+    {
+      "node_type": "Department",
+      "label": "Roads",
+      "id": "Department:Roads"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C101.jpg",
+      "path": "images/C101.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C101.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C102",
+      "issue_type": "Pothole",
+      "description": "Big pothole close to the bus stop on Main Road causing traffic slowdown",
+      "latitude": 19.1199,
+      "longitude": 72.847,
+      "status": "Unresolved",
+      "created_date": "2026-10-09",
+      "id": "Complaint:C102"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C102.jpg",
+      "path": "images/C102.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C102.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C103",
+      "issue_type": "Pothole",
+      "description": "Deep pothole filled with water after rain near Andheri station",
+      "latitude": 19.119,
+      "longitude": 72.8465,
+      "status": "Unresolved",
+      "created_date": "2026-10-05",
+      "id": "Complaint:C103"
+    },
+    {
+      "node_type": "Road",
+      "label": "S.V. Road",
+      "importance": "Major",
+      "id": "Road:S.V. Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C103.jpg",
+      "path": "images/C103.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C103.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C104",
+      "issue_type": "Pothole",
+      "description": "Small pothole on narrow lane near the market",
+      "latitude": 19.123,
+      "longitude": 72.842,
+      "status": "Unresolved",
+      "created_date": "2026-09-28",
+      "id": "Complaint:C104"
+    },
+    {
+      "node_type": "Road",
+      "label": "Four Bungalows Road",
+      "importance": "Minor",
+      "id": "Road:Four Bungalows Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C104.jpg",
+      "path": "images/C104.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C104.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C105",
+      "issue_type": "Pothole",
+      "description": "Pothole cluster on highway service lane near flyover",
+      "latitude": 19.115,
+      "longitude": 72.869,
+      "status": "Unresolved",
+      "created_date": "2026-10-02",
+      "id": "Complaint:C105"
+    },
+    {
+      "node_type": "Road",
+      "label": "Western Express Highway",
+      "importance": "Major",
+      "id": "Road:Western Express Highway"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C105.jpg",
+      "path": "images/C105.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C105.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C106",
+      "issue_type": "Pothole",
+      "description": "Pothole on highway causing two-wheeler skids",
+      "latitude": 19.116,
+      "longitude": 72.87,
+      "status": "In Progress",
+      "created_date": "2026-09-30",
+      "id": "Complaint:C106"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C106.jpg",
+      "path": "images/C106.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C106.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C107",
+      "issue_type": "Pothole",
+      "description": "Wide pothole on highway near Jogeshwari flyover",
+      "latitude": 19.136,
+      "longitude": 72.856,
+      "status": "Unresolved",
+      "created_date": "2026-10-07",
+      "id": "Complaint:C107"
+    },
+    {
+      "node_type": "Location",
+      "label": "Jogeshwari",
+      "latitude": 19.1359125,
+      "longitude": 72.8539,
+      "id": "Location:Jogeshwari"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C107.jpg",
+      "path": "images/C107.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C107.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C108",
+      "issue_type": "Pothole",
+      "description": "Pothole beside Jogeshwari station bridge",
+      "latitude": 19.1355,
+      "longitude": 72.8488,
+      "status": "Resolved",
+      "created_date": "2026-08-20",
+      "id": "Complaint:C108"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C108.jpg",
+      "path": "images/C108.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C108.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C109",
+      "issue_type": "Pothole",
+      "description": "Pothole outside Vile Parle station exit",
+      "latitude": 19.0995,
+      "longitude": 72.8442,
+      "status": "Unresolved",
+      "created_date": "2026-10-03",
+      "id": "Complaint:C109"
+    },
+    {
+      "node_type": "Location",
+      "label": "Vile Parle",
+      "latitude": 19.098857142857145,
+      "longitude": 72.8454,
+      "id": "Location:Vile Parle"
+    },
+    {
+      "node_type": "Road",
+      "label": "Station Road",
+      "importance": "Minor",
+      "id": "Road:Station Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C109.jpg",
+      "path": "images/C109.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C109.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C110",
+      "issue_type": "Pothole",
+      "description": "Pothole near school gate on S.V. Road",
+      "latitude": 19.0985,
+      "longitude": 72.845,
+      "status": "In Progress",
+      "created_date": "2026-09-25",
+      "id": "Complaint:C110"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C110.jpg",
+      "path": "images/C110.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C110.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C111",
+      "issue_type": "Pothole",
+      "description": "Large pothole at Bandra signal",
+      "latitude": 19.06,
+      "longitude": 72.83,
+      "status": "Unresolved",
+      "created_date": "2026-10-08",
+      "id": "Complaint:C111"
+    },
+    {
+      "node_type": "Location",
+      "label": "Bandra",
+      "latitude": 19.06143,
+      "longitude": 72.83049,
+      "id": "Location:Bandra"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C111.jpg",
+      "path": "images/C111.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C111.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C112",
+      "issue_type": "Pothole",
+      "description": "Pothole on residential hill road",
+      "latitude": 19.059,
+      "longitude": 72.829,
+      "status": "Resolved",
+      "created_date": "2026-08-30",
+      "id": "Complaint:C112"
+    },
+    {
+      "node_type": "Road",
+      "label": "Pali Hill Road",
+      "importance": "Minor",
+      "id": "Road:Pali Hill Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C112.jpg",
+      "path": "images/C112.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C112.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C113",
+      "issue_type": "Pothole",
+      "description": "Deep pothole on Andheri-Kurla Road near Kurla bus depot",
+      "latitude": 19.073,
+      "longitude": 72.883,
+      "status": "Unresolved",
+      "created_date": "2026-10-06",
+      "id": "Complaint:C113"
+    },
+    {
+      "node_type": "Location",
+      "label": "Kurla",
+      "latitude": 19.072409999999998,
+      "longitude": 72.88168,
+      "id": "Location:Kurla"
+    },
+    {
+      "node_type": "Road",
+      "label": "Andheri-Kurla Road",
+      "importance": "Major",
+      "id": "Road:Andheri-Kurla Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C113.jpg",
+      "path": "images/C113.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C113.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C114",
+      "issue_type": "Pothole",
+      "description": "Pothole near Kurla bus depot damaging tyres",
+      "latitude": 19.0725,
+      "longitude": 72.882,
+      "status": "Unresolved",
+      "created_date": "2026-10-06",
+      "id": "Complaint:C114"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C114.jpg",
+      "path": "images/C114.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C114.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C115",
+      "issue_type": "Pothole",
+      "description": "Pothole on JVLR near Powai lake junction",
+      "latitude": 19.118,
+      "longitude": 72.906,
+      "status": "Unresolved",
+      "created_date": "2026-10-01",
+      "id": "Complaint:C115"
+    },
+    {
+      "node_type": "Location",
+      "label": "Powai",
+      "latitude": 19.117771428571427,
+      "longitude": 72.90647142857144,
+      "id": "Location:Powai"
+    },
+    {
+      "node_type": "Road",
+      "label": "JVLR",
+      "importance": "Major",
+      "id": "Road:JVLR"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C115.jpg",
+      "path": "images/C115.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C115.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C116",
+      "issue_type": "Pothole",
+      "description": "Pothole in front of apartment gate",
+      "latitude": 19.117,
+      "longitude": 72.907,
+      "status": "Resolved",
+      "created_date": "2026-09-02",
+      "id": "Complaint:C116"
+    },
+    {
+      "node_type": "Road",
+      "label": "Chandivali Road",
+      "importance": "Minor",
+      "id": "Road:Chandivali Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C116.jpg",
+      "path": "images/C116.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C116.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C117",
+      "issue_type": "Pothole",
+      "description": "Pothole on Link Road near Goregaon mall",
+      "latitude": 19.167,
+      "longitude": 72.853,
+      "status": "Unresolved",
+      "created_date": "2026-10-04",
+      "id": "Complaint:C117"
+    },
+    {
+      "node_type": "Location",
+      "label": "Goregaon",
+      "latitude": 19.166114285714286,
+      "longitude": 72.85762857142858,
+      "id": "Location:Goregaon"
+    },
+    {
+      "node_type": "Road",
+      "label": "Link Road",
+      "importance": "Major",
+      "id": "Road:Link Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C117.jpg",
+      "path": "images/C117.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C117.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C118",
+      "issue_type": "Damaged Road",
+      "description": "Road surface cracked and caved in after pipeline work",
+      "latitude": 19.12,
+      "longitude": 72.848,
+      "status": "Unresolved",
+      "created_date": "2026-09-18",
+      "id": "Complaint:C118"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C118.jpg",
+      "path": "images/C118.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C118.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C119",
+      "issue_type": "Damaged Road",
+      "description": "Broken road edge and exposed gravel on Link Road",
+      "latitude": 19.1655,
+      "longitude": 72.852,
+      "status": "In Progress",
+      "created_date": "2026-09-12",
+      "id": "Complaint:C119"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C119.jpg",
+      "path": "images/C119.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C119.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C120",
+      "issue_type": "Damaged Road",
+      "description": "Road surface peeling off near Kurla junction",
+      "latitude": 19.072,
+      "longitude": 72.8835,
+      "status": "Unresolved",
+      "created_date": "2026-10-02",
+      "id": "Complaint:C120"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C120.jpg",
+      "path": "images/C120.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C120.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C121",
+      "issue_type": "Damaged Road",
+      "description": "Cracked and sunken road patch on hill road",
+      "latitude": 19.0605,
+      "longitude": 72.831,
+      "status": "Unresolved",
+      "created_date": "2026-09-22",
+      "id": "Complaint:C121"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C121.jpg",
+      "path": "images/C121.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C121.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C122",
+      "issue_type": "Garbage",
+      "description": "Overflowing garbage bin near Andheri station",
+      "latitude": 19.1195,
+      "longitude": 72.8466,
+      "status": "Unresolved",
+      "created_date": "2026-10-09",
+      "id": "Complaint:C122"
+    },
+    {
+      "node_type": "Department",
+      "label": "Sanitation",
+      "id": "Department:Sanitation"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C123",
+      "issue_type": "Garbage",
+      "description": "Uncollected garbage pile on roadside for three days",
+      "latitude": 19.121,
+      "longitude": 72.844,
+      "status": "Unresolved",
+      "created_date": "2026-10-04",
+      "id": "Complaint:C123"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C124",
+      "issue_type": "Garbage",
+      "description": "Garbage dumped under the highway flyover",
+      "latitude": 19.114,
+      "longitude": 72.869,
+      "status": "Resolved",
+      "created_date": "2026-09-15",
+      "id": "Complaint:C124"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C125",
+      "issue_type": "Garbage",
+      "description": "Overflowing community bin and foul smell",
+      "latitude": 19.1362,
+      "longitude": 72.8495,
+      "status": "Unresolved",
+      "created_date": "2026-10-08",
+      "id": "Complaint:C125"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C126",
+      "issue_type": "Garbage",
+      "description": "Garbage not collected from station road",
+      "latitude": 19.0992,
+      "longitude": 72.8438,
+      "status": "In Progress",
+      "created_date": "2026-10-01",
+      "id": "Complaint:C126"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C127",
+      "issue_type": "Garbage",
+      "description": "Waste piled beside the footpath",
+      "latitude": 19.0598,
+      "longitude": 72.8297,
+      "status": "Unresolved",
+      "created_date": "2026-10-05",
+      "id": "Complaint:C127"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C128",
+      "issue_type": "Garbage",
+      "description": "Large garbage heap near bus depot",
+      "latitude": 19.0735,
+      "longitude": 72.8815,
+      "status": "Unresolved",
+      "created_date": "2026-10-07",
+      "id": "Complaint:C128"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C129",
+      "issue_type": "Garbage",
+      "description": "Construction debris dumped on footpath",
+      "latitude": 19.1172,
+      "longitude": 72.9055,
+      "status": "Resolved",
+      "created_date": "2026-09-10",
+      "id": "Complaint:C129"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C130",
+      "issue_type": "Garbage",
+      "description": "Garbage bin overflowing outside mall",
+      "latitude": 19.166,
+      "longitude": 72.8524,
+      "status": "Unresolved",
+      "created_date": "2026-10-09",
+      "id": "Complaint:C130"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C131",
+      "issue_type": "Garbage",
+      "description": "Garbage bin overflowing at station entrance",
+      "latitude": 19.1196,
+      "longitude": 72.8467,
+      "status": "Unresolved",
+      "created_date": "2026-10-10",
+      "id": "Complaint:C131"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C132",
+      "issue_type": "Streetlight",
+      "description": "Streetlight not working near bus stop",
+      "latitude": 19.1194,
+      "longitude": 72.8464,
+      "status": "Unresolved",
+      "created_date": "2026-10-03",
+      "id": "Complaint:C132"
+    },
+    {
+      "node_type": "Department",
+      "label": "Streetlight",
+      "id": "Department:Streetlight"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C133",
+      "issue_type": "Streetlight",
+      "description": "Streetlight flickering at night on narrow lane",
+      "latitude": 19.1235,
+      "longitude": 72.8425,
+      "status": "Unresolved",
+      "created_date": "2026-09-29",
+      "id": "Complaint:C133"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C134",
+      "issue_type": "Streetlight",
+      "description": "Broken streetlight pole on highway",
+      "latitude": 19.1155,
+      "longitude": 72.8695,
+      "status": "In Progress",
+      "created_date": "2026-09-27",
+      "id": "Complaint:C134"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C135",
+      "issue_type": "Streetlight",
+      "description": "Three streetlights out along the highway",
+      "latitude": 19.1358,
+      "longitude": 72.8558,
+      "status": "Unresolved",
+      "created_date": "2026-10-06",
+      "id": "Complaint:C135"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C136",
+      "issue_type": "Streetlight",
+      "description": "Streetlight stays on during the day",
+      "latitude": 19.0988,
+      "longitude": 72.8445,
+      "status": "Resolved",
+      "created_date": "2026-09-05",
+      "id": "Complaint:C136"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C137",
+      "issue_type": "Streetlight",
+      "description": "Streetlight not working at Bandra signal",
+      "latitude": 19.0597,
+      "longitude": 72.8293,
+      "status": "Unresolved",
+      "created_date": "2026-10-02",
+      "id": "Complaint:C137"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C138",
+      "issue_type": "Streetlight",
+      "description": "Dark stretch with broken streetlights near depot",
+      "latitude": 19.0727,
+      "longitude": 72.8822,
+      "status": "Unresolved",
+      "created_date": "2026-10-08",
+      "id": "Complaint:C138"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C139",
+      "issue_type": "Streetlight",
+      "description": "Streetlight pole damaged near Powai lake junction",
+      "latitude": 19.1178,
+      "longitude": 72.9062,
+      "status": "Unresolved",
+      "created_date": "2026-10-09",
+      "id": "Complaint:C139"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C140",
+      "issue_type": "Streetlight",
+      "description": "Streetlight repaired but still flickering",
+      "latitude": 19.1665,
+      "longitude": 72.8528,
+      "status": "Resolved",
+      "created_date": "2026-09-01",
+      "id": "Complaint:C140"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C141",
+      "issue_type": "Pothole",
+      "description": "Pothole on Main Road opposite the post office",
+      "latitude": 19.1203,
+      "longitude": 72.8473,
+      "status": "Unresolved",
+      "created_date": "2026-10-11",
+      "id": "Complaint:C141"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C141.jpg",
+      "path": "images/C141.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C141.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C142",
+      "issue_type": "Pothole",
+      "description": "Two potholes close together near Andheri bus stop",
+      "latitude": 19.1194,
+      "longitude": 72.8471,
+      "status": "Unresolved",
+      "created_date": "2026-10-08",
+      "id": "Complaint:C142"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C142.jpg",
+      "path": "images/C142.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C142.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C143",
+      "issue_type": "Pothole",
+      "description": "Pothole near the Andheri flyover ramp",
+      "latitude": 19.1186,
+      "longitude": 72.8458,
+      "status": "In Progress",
+      "created_date": "2026-09-26",
+      "id": "Complaint:C143"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C143.jpg",
+      "path": "images/C143.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C143.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C144",
+      "issue_type": "Pothole",
+      "description": "Deep pothole outside the Andheri court gate",
+      "latitude": 19.1182,
+      "longitude": 72.8477,
+      "status": "Unresolved",
+      "created_date": "2026-10-01",
+      "id": "Complaint:C144"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C144.jpg",
+      "path": "images/C144.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C144.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C145",
+      "issue_type": "Pothole",
+      "description": "Pothole in front of the temple on Four Bungalows Road",
+      "latitude": 19.1238,
+      "longitude": 72.8412,
+      "status": "Unresolved",
+      "created_date": "2026-10-05",
+      "id": "Complaint:C145"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C145.jpg",
+      "path": "images/C145.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C145.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C146",
+      "issue_type": "Pothole",
+      "description": "Rain-damaged pothole on Lokhandwala Back Road",
+      "latitude": 19.1325,
+      "longitude": 72.8305,
+      "status": "Resolved",
+      "created_date": "2026-08-28",
+      "id": "Complaint:C146"
+    },
+    {
+      "node_type": "Road",
+      "label": "Lokhandwala Back Road",
+      "importance": "Minor",
+      "id": "Road:Lokhandwala Back Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C146.jpg",
+      "path": "images/C146.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C146.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C147",
+      "issue_type": "Pothole",
+      "description": "Large pothole near the metro station exit",
+      "latitude": 19.1141,
+      "longitude": 72.8683,
+      "status": "Unresolved",
+      "created_date": "2026-10-09",
+      "id": "Complaint:C147"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C147.jpg",
+      "path": "images/C147.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C147.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C148",
+      "issue_type": "Pothole",
+      "description": "Pothole on highway service road near the airport signal",
+      "latitude": 19.1128,
+      "longitude": 72.8675,
+      "status": "In Progress",
+      "created_date": "2026-09-21",
+      "id": "Complaint:C148"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C148.jpg",
+      "path": "images/C148.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C148.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C149",
+      "issue_type": "Damaged Road",
+      "description": "Road caved in near the water pipeline junction",
+      "latitude": 19.1207,
+      "longitude": 72.8466,
+      "status": "Unresolved",
+      "created_date": "2026-09-30",
+      "id": "Complaint:C149"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C149.jpg",
+      "path": "images/C149.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C149.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C150",
+      "issue_type": "Damaged Road",
+      "description": "Crumbling road edge beside the drain",
+      "latitude": 19.1219,
+      "longitude": 72.8431,
+      "status": "Unresolved",
+      "created_date": "2026-10-03",
+      "id": "Complaint:C150"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C150.jpg",
+      "path": "images/C150.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C150.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C151",
+      "issue_type": "Pothole",
+      "description": "Pothole on Link Road near the Andheri sports complex",
+      "latitude": 19.1275,
+      "longitude": 72.8338,
+      "status": "Unresolved",
+      "created_date": "2026-10-07",
+      "id": "Complaint:C151"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C151.jpg",
+      "path": "images/C151.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C151.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C152",
+      "issue_type": "Pothole",
+      "description": "Pothole outside the Andheri market lane",
+      "latitude": 19.1226,
+      "longitude": 72.8428,
+      "status": "Resolved",
+      "created_date": "2026-09-08",
+      "id": "Complaint:C152"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C152.jpg",
+      "path": "images/C152.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C152.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C153",
+      "issue_type": "Pothole",
+      "description": "Pothole near Jogeshwari flyover bus stop",
+      "latitude": 19.1352,
+      "longitude": 72.8552,
+      "status": "Unresolved",
+      "created_date": "2026-10-10",
+      "id": "Complaint:C153"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C153.jpg",
+      "path": "images/C153.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C153.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C154",
+      "issue_type": "Pothole",
+      "description": "Cluster of potholes on JVLR near the cave road",
+      "latitude": 19.1372,
+      "longitude": 72.8625,
+      "status": "Unresolved",
+      "created_date": "2026-10-04",
+      "id": "Complaint:C154"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C154.jpg",
+      "path": "images/C154.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C154.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C155",
+      "issue_type": "Pothole",
+      "description": "Pothole on S.V. Road beside Jogeshwari station",
+      "latitude": 19.1348,
+      "longitude": 72.8493,
+      "status": "In Progress",
+      "created_date": "2026-09-19",
+      "id": "Complaint:C155"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C155.jpg",
+      "path": "images/C155.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C155.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C156",
+      "issue_type": "Damaged Road",
+      "description": "Broken concrete patch near Jogeshwari bridge",
+      "latitude": 19.1366,
+      "longitude": 72.8541,
+      "status": "Unresolved",
+      "created_date": "2026-09-27",
+      "id": "Complaint:C156"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C156.jpg",
+      "path": "images/C156.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C156.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C157",
+      "issue_type": "Pothole",
+      "description": "Pothole on Nehru Road near the airport gate",
+      "latitude": 19.0985,
+      "longitude": 72.8512,
+      "status": "Unresolved",
+      "created_date": "2026-10-06",
+      "id": "Complaint:C157"
+    },
+    {
+      "node_type": "Road",
+      "label": "Nehru Road",
+      "importance": "Major",
+      "id": "Road:Nehru Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C157.jpg",
+      "path": "images/C157.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C157.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C158",
+      "issue_type": "Pothole",
+      "description": "Pothole at Vile Parle market junction",
+      "latitude": 19.0999,
+      "longitude": 72.8447,
+      "status": "Resolved",
+      "created_date": "2026-09-03",
+      "id": "Complaint:C158"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C158.jpg",
+      "path": "images/C158.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C158.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C159",
+      "issue_type": "Pothole",
+      "description": "Deep pothole on S.V. Road near the college",
+      "latitude": 19.0976,
+      "longitude": 72.8444,
+      "status": "Unresolved",
+      "created_date": "2026-10-02",
+      "id": "Complaint:C159"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C159.jpg",
+      "path": "images/C159.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C159.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C160",
+      "issue_type": "Pothole",
+      "description": "Pothole outside Santacruz station west",
+      "latitude": 19.0813,
+      "longitude": 72.8412,
+      "status": "Unresolved",
+      "created_date": "2026-10-08",
+      "id": "Complaint:C160"
+    },
+    {
+      "node_type": "Location",
+      "label": "Santacruz",
+      "latitude": 19.08095,
+      "longitude": 72.84165,
+      "id": "Location:Santacruz"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C160.jpg",
+      "path": "images/C160.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C160.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C161",
+      "issue_type": "Damaged Road",
+      "description": "Road surface worn out near Santacruz junction",
+      "latitude": 19.0806,
+      "longitude": 72.8421,
+      "status": "In Progress",
+      "created_date": "2026-09-14",
+      "id": "Complaint:C161"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C161.jpg",
+      "path": "images/C161.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C161.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C162",
+      "issue_type": "Pothole",
+      "description": "Pothole on Linking Road near the shopping stretch",
+      "latitude": 19.0653,
+      "longitude": 72.8338,
+      "status": "Unresolved",
+      "created_date": "2026-10-09",
+      "id": "Complaint:C162"
+    },
+    {
+      "node_type": "Road",
+      "label": "Linking Road",
+      "importance": "Major",
+      "id": "Road:Linking Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C162.jpg",
+      "path": "images/C162.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C162.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C163",
+      "issue_type": "Pothole",
+      "description": "Pothole at Bandra station east approach",
+      "latitude": 19.0611,
+      "longitude": 72.8349,
+      "status": "Unresolved",
+      "created_date": "2026-10-05",
+      "id": "Complaint:C163"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C163.jpg",
+      "path": "images/C163.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C163.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C164",
+      "issue_type": "Pothole",
+      "description": "Pothole on Pali Hill Road bend",
+      "latitude": 19.0652,
+      "longitude": 72.8239,
+      "status": "Resolved",
+      "created_date": "2026-09-06",
+      "id": "Complaint:C164"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C164.jpg",
+      "path": "images/C164.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C164.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C165",
+      "issue_type": "Damaged Road",
+      "description": "Subsidence on Linking Road after cable laying",
+      "latitude": 19.0644,
+      "longitude": 72.8331,
+      "status": "Unresolved",
+      "created_date": "2026-10-01",
+      "id": "Complaint:C165"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C165.jpg",
+      "path": "images/C165.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C165.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C166",
+      "issue_type": "Pothole",
+      "description": "Waterlogged pothole near the Bandra signal",
+      "latitude": 19.0593,
+      "longitude": 72.8302,
+      "status": "In Progress",
+      "created_date": "2026-09-29",
+      "id": "Complaint:C166"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C166.jpg",
+      "path": "images/C166.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C166.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C167",
+      "issue_type": "Pothole",
+      "description": "Pothole on LBS Marg near Kurla station",
+      "latitude": 19.0713,
+      "longitude": 72.879,
+      "status": "Unresolved",
+      "created_date": "2026-10-10",
+      "id": "Complaint:C167"
+    },
+    {
+      "node_type": "Road",
+      "label": "LBS Marg",
+      "importance": "Major",
+      "id": "Road:LBS Marg"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C167.jpg",
+      "path": "images/C167.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C167.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C168",
+      "issue_type": "Pothole",
+      "description": "Pothole outside the Kurla market",
+      "latitude": 19.0721,
+      "longitude": 72.8805,
+      "status": "Unresolved",
+      "created_date": "2026-10-07",
+      "id": "Complaint:C168"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C168.jpg",
+      "path": "images/C168.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C168.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C169",
+      "issue_type": "Pothole",
+      "description": "Pothole on Andheri-Kurla Road near the bus depot gate",
+      "latitude": 19.0733,
+      "longitude": 72.8826,
+      "status": "In Progress",
+      "created_date": "2026-09-24",
+      "id": "Complaint:C169"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C169.jpg",
+      "path": "images/C169.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C169.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C170",
+      "issue_type": "Pothole",
+      "description": "Pothole opposite the Kurla bus depot exit",
+      "latitude": 19.0728,
+      "longitude": 72.8828,
+      "status": "Unresolved",
+      "created_date": "2026-10-06",
+      "id": "Complaint:C170"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C170.jpg",
+      "path": "images/C170.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C170.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C171",
+      "issue_type": "Damaged Road",
+      "description": "Road cracked and sinking near the LBS junction",
+      "latitude": 19.0709,
+      "longitude": 72.8797,
+      "status": "Unresolved",
+      "created_date": "2026-09-17",
+      "id": "Complaint:C171"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C171.jpg",
+      "path": "images/C171.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C171.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C172",
+      "issue_type": "Pothole",
+      "description": "Pothole on JVLR near the Powai flyover",
+      "latitude": 19.1186,
+      "longitude": 72.9054,
+      "status": "Unresolved",
+      "created_date": "2026-10-03",
+      "id": "Complaint:C172"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C172.jpg",
+      "path": "images/C172.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C172.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C173",
+      "issue_type": "Pothole",
+      "description": "Pothole at the Chandivali Road turn",
+      "latitude": 19.1168,
+      "longitude": 72.9081,
+      "status": "In Progress",
+      "created_date": "2026-09-23",
+      "id": "Complaint:C173"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C173.jpg",
+      "path": "images/C173.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C173.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C174",
+      "issue_type": "Damaged Road",
+      "description": "Broken road edge near Powai lake",
+      "latitude": 19.119,
+      "longitude": 72.9071,
+      "status": "Resolved",
+      "created_date": "2026-09-01",
+      "id": "Complaint:C174"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C174.jpg",
+      "path": "images/C174.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C174.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C175",
+      "issue_type": "Pothole",
+      "description": "Pothole on Link Road beside the Goregaon petrol pump",
+      "latitude": 19.1658,
+      "longitude": 72.8541,
+      "status": "Unresolved",
+      "created_date": "2026-10-08",
+      "id": "Complaint:C175"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C175.jpg",
+      "path": "images/C175.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C175.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C176",
+      "issue_type": "Pothole",
+      "description": "Pothole on Aarey Road near the colony gate",
+      "latitude": 19.1649,
+      "longitude": 72.8689,
+      "status": "Unresolved",
+      "created_date": "2026-09-20",
+      "id": "Complaint:C176"
+    },
+    {
+      "node_type": "Road",
+      "label": "Aarey Road",
+      "importance": "Minor",
+      "id": "Road:Aarey Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C176.jpg",
+      "path": "images/C176.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C176.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C177",
+      "issue_type": "Damaged Road",
+      "description": "Washed out road section on Aarey Road",
+      "latitude": 19.1671,
+      "longitude": 72.8702,
+      "status": "In Progress",
+      "created_date": "2026-09-09",
+      "id": "Complaint:C177"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C177.jpg",
+      "path": "images/C177.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C177.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C178",
+      "issue_type": "Pothole",
+      "description": "Pothole on Link Road near Malad flyover",
+      "latitude": 19.1865,
+      "longitude": 72.8494,
+      "status": "Unresolved",
+      "created_date": "2026-10-11",
+      "id": "Complaint:C178"
+    },
+    {
+      "node_type": "Location",
+      "label": "Malad",
+      "latitude": 19.187866666666665,
+      "longitude": 72.84456666666667,
+      "id": "Location:Malad"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C178.jpg",
+      "path": "images/C178.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C178.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C179",
+      "issue_type": "Pothole",
+      "description": "Pothole on Marve Road near the school",
+      "latitude": 19.1893,
+      "longitude": 72.8362,
+      "status": "Resolved",
+      "created_date": "2026-08-25",
+      "id": "Complaint:C179"
+    },
+    {
+      "node_type": "Road",
+      "label": "Marve Road",
+      "importance": "Minor",
+      "id": "Road:Marve Road"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C179.jpg",
+      "path": "images/C179.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C179.jpg"
+    },
+    {
+      "node_type": "Complaint",
+      "label": "C180",
+      "issue_type": "Damaged Road",
+      "description": "Road surface broken near the Malad railway bridge",
+      "latitude": 19.1878,
+      "longitude": 72.8481,
+      "status": "Unresolved",
+      "created_date": "2026-10-02",
+      "id": "Complaint:C180"
+    },
+    {
+      "node_type": "EvidenceImage",
+      "label": "C180.jpg",
+      "path": "images/C180.jpg",
+      "exists": true,
+      "id": "EvidenceImage:images/C180.jpg"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C101",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C101",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C101",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C101",
+      "target": "EvidenceImage:images/C101.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Main Road",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C102",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C102",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C102",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C102",
+      "target": "EvidenceImage:images/C102.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C103",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C103",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C103",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C103",
+      "target": "EvidenceImage:images/C103.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:S.V. Road",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:S.V. Road",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:S.V. Road",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:S.V. Road",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C104",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C104",
+      "target": "Road:Four Bungalows Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C104",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C104",
+      "target": "EvidenceImage:images/C104.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Four Bungalows Road",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C105",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C105",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C105",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C105",
+      "target": "EvidenceImage:images/C105.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Western Express Highway",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Western Express Highway",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C106",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C106",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C106",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C106",
+      "target": "EvidenceImage:images/C106.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C107",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C107",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C107",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C107",
+      "target": "EvidenceImage:images/C107.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C108",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C108",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C108",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C108",
+      "target": "EvidenceImage:images/C108.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C109",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C109",
+      "target": "Road:Station Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C109",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C109",
+      "target": "EvidenceImage:images/C109.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Station Road",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C110",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C110",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C110",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C110",
+      "target": "EvidenceImage:images/C110.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C111",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C111",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C111",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C111",
+      "target": "EvidenceImage:images/C111.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C112",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C112",
+      "target": "Road:Pali Hill Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C112",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C112",
+      "target": "EvidenceImage:images/C112.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Pali Hill Road",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C113",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C113",
+      "target": "Road:Andheri-Kurla Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C113",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C113",
+      "target": "EvidenceImage:images/C113.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Andheri-Kurla Road",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C114",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C114",
+      "target": "Road:Andheri-Kurla Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C114",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C114",
+      "target": "EvidenceImage:images/C114.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C115",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C115",
+      "target": "Road:JVLR"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C115",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C115",
+      "target": "EvidenceImage:images/C115.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:JVLR",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:JVLR",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C116",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C116",
+      "target": "Road:Chandivali Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C116",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C116",
+      "target": "EvidenceImage:images/C116.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Chandivali Road",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C117",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C117",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C117",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C117",
+      "target": "EvidenceImage:images/C117.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Link Road",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Link Road",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Link Road",
+      "target": "Location:Malad"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C118",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C118",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C118",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C118",
+      "target": "EvidenceImage:images/C118.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C119",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C119",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C119",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C119",
+      "target": "EvidenceImage:images/C119.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C120",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C120",
+      "target": "Road:Andheri-Kurla Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C120",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C120",
+      "target": "EvidenceImage:images/C120.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C121",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C121",
+      "target": "Road:Pali Hill Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C121",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C121",
+      "target": "EvidenceImage:images/C121.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C122",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C122",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C122",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C123",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C123",
+      "target": "Road:Four Bungalows Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C123",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C124",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C124",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C124",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C125",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C125",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C125",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C126",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C126",
+      "target": "Road:Station Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C126",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C127",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C127",
+      "target": "Road:Pali Hill Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C127",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C128",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C128",
+      "target": "Road:Andheri-Kurla Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C128",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C129",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C129",
+      "target": "Road:Chandivali Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C129",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C130",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C130",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C130",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C131",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C131",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C131",
+      "target": "Department:Sanitation"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C132",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C132",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C132",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C133",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C133",
+      "target": "Road:Four Bungalows Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C133",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C134",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C134",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C134",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C135",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C135",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C135",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C136",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C136",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C136",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C137",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C137",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C137",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C138",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C138",
+      "target": "Road:Andheri-Kurla Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C138",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C139",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C139",
+      "target": "Road:JVLR"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C139",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C140",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C140",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C140",
+      "target": "Department:Streetlight"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C141",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C141",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C141",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C141",
+      "target": "EvidenceImage:images/C141.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C142",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C142",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C142",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C142",
+      "target": "EvidenceImage:images/C142.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C143",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C143",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C143",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C143",
+      "target": "EvidenceImage:images/C143.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C144",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C144",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C144",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C144",
+      "target": "EvidenceImage:images/C144.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C145",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C145",
+      "target": "Road:Four Bungalows Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C145",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C145",
+      "target": "EvidenceImage:images/C145.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C146",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C146",
+      "target": "Road:Lokhandwala Back Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C146",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C146",
+      "target": "EvidenceImage:images/C146.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Lokhandwala Back Road",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C147",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C147",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C147",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C147",
+      "target": "EvidenceImage:images/C147.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C148",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C148",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C148",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C148",
+      "target": "EvidenceImage:images/C148.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C149",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C149",
+      "target": "Road:Main Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C149",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C149",
+      "target": "EvidenceImage:images/C149.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C150",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C150",
+      "target": "Road:Four Bungalows Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C150",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C150",
+      "target": "EvidenceImage:images/C150.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C151",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C151",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C151",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C151",
+      "target": "EvidenceImage:images/C151.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C152",
+      "target": "Location:Andheri"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C152",
+      "target": "Road:Four Bungalows Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C152",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C152",
+      "target": "EvidenceImage:images/C152.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C153",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C153",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C153",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C153",
+      "target": "EvidenceImage:images/C153.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C154",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C154",
+      "target": "Road:JVLR"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C154",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C154",
+      "target": "EvidenceImage:images/C154.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C155",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C155",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C155",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C155",
+      "target": "EvidenceImage:images/C155.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C156",
+      "target": "Location:Jogeshwari"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C156",
+      "target": "Road:Western Express Highway"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C156",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C156",
+      "target": "EvidenceImage:images/C156.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C157",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C157",
+      "target": "Road:Nehru Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C157",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C157",
+      "target": "EvidenceImage:images/C157.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Nehru Road",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Nehru Road",
+      "target": "Location:Santacruz"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C158",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C158",
+      "target": "Road:Station Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C158",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C158",
+      "target": "EvidenceImage:images/C158.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C159",
+      "target": "Location:Vile Parle"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C159",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C159",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C159",
+      "target": "EvidenceImage:images/C159.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C160",
+      "target": "Location:Santacruz"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C160",
+      "target": "Road:Nehru Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C160",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C160",
+      "target": "EvidenceImage:images/C160.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C161",
+      "target": "Location:Santacruz"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C161",
+      "target": "Road:Nehru Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C161",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C161",
+      "target": "EvidenceImage:images/C161.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C162",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C162",
+      "target": "Road:Linking Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C162",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C162",
+      "target": "EvidenceImage:images/C162.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Linking Road",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C163",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C163",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C163",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C163",
+      "target": "EvidenceImage:images/C163.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C164",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C164",
+      "target": "Road:Pali Hill Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C164",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C164",
+      "target": "EvidenceImage:images/C164.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C165",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C165",
+      "target": "Road:Linking Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C165",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C165",
+      "target": "EvidenceImage:images/C165.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C166",
+      "target": "Location:Bandra"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C166",
+      "target": "Road:S.V. Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C166",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C166",
+      "target": "EvidenceImage:images/C166.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C167",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C167",
+      "target": "Road:LBS Marg"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C167",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C167",
+      "target": "EvidenceImage:images/C167.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:LBS Marg",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C168",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C168",
+      "target": "Road:LBS Marg"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C168",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C168",
+      "target": "EvidenceImage:images/C168.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C169",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C169",
+      "target": "Road:Andheri-Kurla Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C169",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C169",
+      "target": "EvidenceImage:images/C169.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C170",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C170",
+      "target": "Road:Andheri-Kurla Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C170",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C170",
+      "target": "EvidenceImage:images/C170.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C171",
+      "target": "Location:Kurla"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C171",
+      "target": "Road:LBS Marg"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C171",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C171",
+      "target": "EvidenceImage:images/C171.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C172",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C172",
+      "target": "Road:JVLR"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C172",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C172",
+      "target": "EvidenceImage:images/C172.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C173",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C173",
+      "target": "Road:Chandivali Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C173",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C173",
+      "target": "EvidenceImage:images/C173.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C174",
+      "target": "Location:Powai"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C174",
+      "target": "Road:JVLR"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C174",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C174",
+      "target": "EvidenceImage:images/C174.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C175",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C175",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C175",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C175",
+      "target": "EvidenceImage:images/C175.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C176",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C176",
+      "target": "Road:Aarey Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C176",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C176",
+      "target": "EvidenceImage:images/C176.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Aarey Road",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C177",
+      "target": "Location:Goregaon"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C177",
+      "target": "Road:Aarey Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C177",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C177",
+      "target": "EvidenceImage:images/C177.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C178",
+      "target": "Location:Malad"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C178",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C178",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C178",
+      "target": "EvidenceImage:images/C178.jpg"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C179",
+      "target": "Location:Malad"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C179",
+      "target": "Road:Marve Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C179",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C179",
+      "target": "EvidenceImage:images/C179.jpg"
+    },
+    {
+      "relation": "PASSES_THROUGH",
+      "source": "Road:Marve Road",
+      "target": "Location:Malad"
+    },
+    {
+      "relation": "LOCATED_AT",
+      "source": "Complaint:C180",
+      "target": "Location:Malad"
+    },
+    {
+      "relation": "AFFECTS_ROAD",
+      "source": "Complaint:C180",
+      "target": "Road:Link Road"
+    },
+    {
+      "relation": "ASSIGNED_TO",
+      "source": "Complaint:C180",
+      "target": "Department:Roads"
+    },
+    {
+      "relation": "HAS_EVIDENCE",
+      "source": "Complaint:C180",
+      "target": "EvidenceImage:images/C180.jpg"
+    }
+  ]
+}
